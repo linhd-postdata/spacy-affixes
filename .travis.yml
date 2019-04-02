@@ -1,0 +1,24 @@
+dist: xenial
+language: python
+matrix:
+  include:
+    - python: 3.7
+      env: TOXENV=py37
+    - python: 3.7
+      env: TOXENV=flake8
+    - python: 3.6
+      env: TOXENV=py36
+install:
+- pip install -U tox-travis
+script: tox
+deploy:
+  provider: pypi
+  distributions: sdist bdist_wheel
+  user: linhd-postdata
+  password:
+    secure: SoV6858OU6T1NsHmRXx13W8lACeX35OMEYPnRSLo/z2+v1NcwX5jTj6JBIv5w8Mfoyul59xWZWMXYpKNInXi9jBlhzNdcYChjvQGpglzDkJ3f3Srz63Zqh7+fdI0Gx2wtM6pExFEmF6XxOJUF88ECn1OKtSd49bkjhJAZ4zJnmeGLbwheh+ZubwqIlB6x+Pr+d09JBBLm+WXF/UcWU4659I+0a5+DLlp6MBZ2jfoK9Aif9M8Zx94HaaBUX7SoKdLiz/0ESL6l3L3MlPhoGPuBjaQ86PJqihRUPFVDlJWcMH+w4JxSKGh/pUG3qiEFPigoybiFyokmSWpKp4x/uD8og1IMi9HswNN0fosJLBhMtEJ/iUrqrvBtWI0I4gV9Anepe+XaYE7wymVAUtxy6puN3ucSwRSgPrLBEgeicSeAQH49T9jBj8i/cZ18Iwz6YZFns3OFCl05lTkjLIgga4lb/ci2C3jT6J4ZIL6OZvktpN7McGS0h64AMetI966+d1Tk4aJP1/dC/wqeWPdYB0/hSDYz/Wt9BdSqX9B/eMqmFLvv1SCdBalaoTOl3yzxXUxb6IXgg3ySQh/6vpeknlDIvy0+HtlUMqunteVshtA0biBOKqtZ1pRdNoYoO0EMZy7TMImECOzliAt485a7P5ElZ5MwNA3Q/wFpgYhGbhz6PU=
+  on:
+    tags: true
+    repo: linhd-postdata/spacy-affixes
+    python: 3.7
+    env: TOXENV=py37
