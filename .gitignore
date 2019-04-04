@@ -102,3 +102,7 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# spacy-affixes
+lexicon*.json
+affixes*.json
