@@ -4,6 +4,6 @@
 
 __author__ = """LINHD POSTDATA Project"""
 __email__ = 'info@linhd.uned.es'
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 
 from .main import AffixesMatcher  # pragma: no cover
