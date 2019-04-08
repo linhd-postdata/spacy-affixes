@@ -5,6 +5,8 @@
 
 from glob import glob
 from setuptools import setup, find_packages
+from os.path import basename
+from os.path import splitext
 
 with open('README.rst') as readme_file:
     readme = readme_file.read()

@@ -76,11 +76,8 @@ Due to licensing issues, :code:`spacy-affixes` comes with no rules nor lexicons 
       - pos_re: EAGLE regular expression to match, (ex. :code:`r"V"`)
       - strip_accent: Boolean indicating whether accents should be stripped in order to find the rest of the token in the lexicon
       - affix_add: List of strings to add to the rest of the token to find it in the lexicon. Each element in the list is tried separately, as in an OR condition. The character :code:`*` means add nothing (ex. :code:`["*", "io"]`)
-      - affix_text: List of Strings with the text to the rest
-                    of the token as individual tokens. For
-                    example, a rule for :code:`dígamelo` might have
-                    :code:`["me", "lo"]` as its :code:`affix_text`
-    
+      - affix_text: List of Strings with the text to the rest of the token as individual tokens. For example, a rule for :code:`dígamelo` might have :code:`["me", "lo"]` as its :code:`affix_text`
+
     - lexicon: Dictionary keyed by word with values for lemma, EAGLE code, UD POS, and UD Tags.
 
 2. Convert the Freeling data. Take into account that if you use Freeling data you are effectively agreeing to their license, which might have implications in the release if your own code. If installed, :code:`spacy-affixes` will look for the environment variables :code:`FREELINGDIR` or :code:`FREELINGSHARE` to find the affixes rules and dictionary files and will process them. If you don't have Freeling installed you can always run the :code:`download` command::
