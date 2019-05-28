@@ -5,7 +5,7 @@ import sys
 import unicodedata
 from collections import defaultdict
 from urllib.request import urlopen
-
+from .eagles import EAGLES_TO_UD_DICT
 
 AFFIXES_SUFFIX = "suffix"
 AFFIXES_PREFIX = "prefix"
@@ -136,13 +136,7 @@ def eagle2tag(eagle):
     :param eagle: EAGLES tag to be converted
     :return: Equivalent UD tag
     """
-    mapper = {}
-    with open('eagles2ud.csv') as maps:
-        for row in maps:
-            key = row.split(',')[0]
-            value = row.split(',')[1][0:-1]
-            mapper[key] = value
-    return mapper.get(eagle, "X")
+    return EAGLES_TO_UD_DICT.get(eagle, "X")
 
 
 def eagle2pos(eagle):

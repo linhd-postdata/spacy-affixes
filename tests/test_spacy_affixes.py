@@ -17,6 +17,7 @@ def nlp():
         nlp_.remove_pipe("affixes")
     return nlp_
 
+
 def test_split_on_all(snapshot, nlp):
     affixes_matcher = AffixesMatcher(nlp, split_on='*')
     nlp.add_pipe(affixes_matcher, name="affixes", before="tagger")
@@ -29,17 +30,18 @@ def test_split_on_all(snapshot, nlp):
     )
     for doc in docs:
         snapshot.assert_match([
-        [
-            token.text,
-            token.lemma_,
-            token.pos_,
-            token.tag_,
-            token._.has_affixes,
-            token._.affixes_rule,
-            token._.affixes_kind,
-            token._.affixes_text,
-            token._.affixes_length,
-        ] for token in nlp(doc)])
+            [
+                token.text,
+                token.lemma_,
+                token.pos_,
+                token.tag_,
+                token._.has_affixes,
+                token._.affixes_rule,
+                token._.affixes_kind,
+                token._.affixes_text,
+                token._.affixes_length,
+            ] for token in nlp(doc)])
+
 
 def test_split_on_verbs(snapshot, nlp):
     pass
