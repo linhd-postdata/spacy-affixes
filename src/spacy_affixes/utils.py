@@ -131,9 +131,18 @@ def strip_accents(string):
 
 
 def eagle2tag(eagle):
-    """Transform an EAGLE tag into UD features"""
-    # TODO
-    return ""
+    """
+    Transform an EAGLES tag into UD features
+    :param eagle: EAGLES tag to be converted
+    :return: Equivalent UD tag
+    """
+    mapper = {}
+    with open('eagles2ud.csv') as maps:
+        for row in maps:
+            key = row.split(',')[0]
+            value = row.split(',')[1][0:-1]
+            mapper[key] = value
+    return mapper.get(eagle, "X")
 
 
 def eagle2pos(eagle):
