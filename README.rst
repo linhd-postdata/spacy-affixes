@@ -80,7 +80,7 @@ Due to licensing issues, :code:`spacy-affixes` comes with no rules nor lexicons 
 
     - lexicon: Dictionary keyed by word with values for lemma, EAGLE code, UD POS, and UD Tags.
 
-2. Convert the Freeling data. Take into account that if you use Freeling data you are effectively agreeing to their license, which might have implications in the release if your own code. If installed, :code:`spacy-affixes` will look for the environment variables :code:`FREELINGDIR` or :code:`FREELINGSHARE` to find the affixes rules and dictionary files and will process them. If you don't have Freeling installed you can always run the :code:`download` command::
+2. Convert the Freeling data. Take into account that if you use Freeling data you are effectively agreeing to their license, which might have implications in the release if your own code. If installed, :code:`spacy-affixes` will look for the environment variables :code:`FREELINGDIR` or :code:`FREELINGSHARE` to find the affixes rules and dictionary files and will process them. If you don't have Freeling installed you can always run the :code:`download` command:
 
 .. code-block:: bash
 
