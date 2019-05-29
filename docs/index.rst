@@ -1,5 +1,5 @@
-Welcome to SpaCy Affixes's documentation!
-======================================
+SpaCy Affixes
+=============
 
 .. toctree::
    :maxdepth: 2

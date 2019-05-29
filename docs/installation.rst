@@ -12,7 +12,7 @@ To install SpaCy Affixes, run this command in your terminal:
 
 .. code-block:: console
 
-    $ pip install spacy_affixes
+    $ pip install spacy-affixes
 
 This is the preferred method to install SpaCy Affixes, as it will always install the most recent stable release.
 
@@ -32,13 +32,13 @@ You can either clone the public repository:
 
 .. code-block:: console
 
-    $ git clone git://github.com/linhd-postdata/spacy_affixes
+    $ git clone git://github.com/linhd-postdata/spacy-affixes
 
 Or download the `tarball`_:
 
 .. code-block:: console
 
-    $ curl  -OL https://github.com/linhd-postdata/spacy_affixes/tarball/master
+    $ curl  -OL https://github.com/linhd-postdata/spacy-affixes/tarball/master
 
 Once you have a copy of the source, you can install it with:
 
@@ -47,5 +47,5 @@ Once you have a copy of the source, you can install it with:
     $ python setup.py install
 
 
-.. _Github repo: https://github.com/linhd-postdata/spacy_affixes
-.. _tarball: https://github.com/linhd-postdata/spacy_affixes/tarball/master
+.. _Github repo: https://github.com/linhd-postdata/spacy-affixes
+.. _tarball: https://github.com/linhd-postdata/spacy-affixes/tarball/master
