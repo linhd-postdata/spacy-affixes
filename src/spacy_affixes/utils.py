@@ -5,7 +5,7 @@ import sys
 import unicodedata
 from collections import defaultdict
 from urllib.request import urlopen
-
+from .eagles import EAGLES_TO_UD_DICT
 
 AFFIXES_SUFFIX = "suffix"
 AFFIXES_PREFIX = "prefix"
@@ -131,9 +131,12 @@ def strip_accents(string):
 
 
 def eagle2tag(eagle):
-    """Transform an EAGLE tag into UD features"""
-    # TODO
-    return ""
+    """
+    Transform an EAGLES tag into UD features
+    :param eagle: EAGLES tag to be converted
+    :return: Equivalent UD tag
+    """
+    return EAGLES_TO_UD_DICT.get(eagle, "X")
 
 
 def eagle2pos(eagle):
