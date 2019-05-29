@@ -6,6 +6,7 @@ import spacy
 
 from spacy_affixes import AffixesMatcher
 from spacy_affixes.utils import download
+from spacy_affixes.utils import eagle2tag
 
 
 @pytest.fixture
@@ -41,6 +42,16 @@ def test_split_on_all(snapshot, nlp):
                 token._.affixes_text,
                 token._.affixes_length,
             ] for token in nlp(doc)])
+
+
+def test_eagle2tag():
+    output = 'NOUN__Gender=Masc|Number=Sing'
+    assert eagle2tag('NCMS000') == output
+
+
+def test_eagle2tag_not_in_dict():
+    output = 'X'
+    assert eagle2tag('WHATEVER') == output
 
 
 def test_split_on_verbs(snapshot, nlp):
