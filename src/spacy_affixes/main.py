@@ -82,13 +82,17 @@ class AffixesMatcher(object):
                 ])
 
     def apply_rules(self, retokenizer, token, rule):
+        strip_accent_exceptions = (
+            "automática",
+        )
         for affix_add in rule["affix_add"]:
+            strip_accent = rule["strip_accent"]
             token_sub = re.sub(rule["pattern"], '', token.text)
             token_left = token_transform(
                 token_sub,
                 rule["kind"],
                 affix_add,
-                rule["strip_accent"]
+                False if token_sub in strip_accent_exceptions else strip_accent
             )
             morfo = get_morfo(
                 token_left.lower(),
