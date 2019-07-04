@@ -40,13 +40,15 @@ class AffixesMatcher(object):
                                     ["me", "lo"] as its `affix_text`
                       It defaults to Freeling if installed (environment
                       variable `FREELINGDIR` should be set) or downloaded using
-                      `python -m spacy_affixes download_freeling_data`. Please,
-                      check the Freeling site to see license compatibilities.
+                      `python -m spacy_affixes download <lang> [version]`.
+                      Please, check the Freeling site to see license
+                      compatibilities.
         :param lexicon: Dictionary keyed by word with values for lemma,
                         EAGLE code, UD POS, and UD Tags. It defaults to
                         Freeling if installed (environment
                         variable `FREELINGDIR` should be set) or downloaded
-                        using `python -m spacy_affixes download_freeling_data`.
+                        using
+                        `python -m spacy_affixes download <lang> [version]`.
                         Please, check the Freeling site to see license
                         compatibilities.
         :param split_on: Tuple of UD POS to split tokens on. Defaults to
@@ -62,7 +64,7 @@ class AffixesMatcher(object):
             that Freeling is installed and its environment
             variable `FREELINGDIR` is set), or that you have downloaded the
             neccessary files using
-            `python -m spacy_affixes download_freeling_data`.
+            `python -m spacy_affixes download <lang> [version]`.
             Please, check the Freeling site to see license
             compatibilities.
             """)
@@ -85,6 +87,7 @@ class AffixesMatcher(object):
         strip_accent_exceptions = (
             "automática",
         )
+        import ipdb; ipdb.set_trace()
         for affix_add in rule["affix_add"]:
             strip_accent = rule["strip_accent"]
             token_sub = re.sub(rule["pattern"], '', token.text)
@@ -94,10 +97,18 @@ class AffixesMatcher(object):
                 affix_add,
                 False if token_sub in strip_accent_exceptions else strip_accent
             )
+            morfo_lemma_opts = {
+                "affix_text": "".join(rule["affix_text"]),
+                "token_lower": token.lower_,
+                "token_left": token_left,
+            }
             morfo = get_morfo(
                 token_left.lower(),
                 self.lexicon,
-                re.compile(rule["pos_re"], re.I)
+                re.compile(rule["pos_re"], re.I),
+                rule["assign_pos"],
+                rule["assign_lemma"],
+                **morfo_lemma_opts
             )
             if (token_left and morfo and not token._.has_affixes):
                 _, token_ud, token_tags, token_lemma = morfo
@@ -142,4 +153,6 @@ class AffixesMatcher(object):
                 if token._.affixes_rule:
                     for rule in self.rules[token._.affixes_rule]:
                         self.apply_rules(retokenizer, token, rule)
+                if not token._.has_affixes:
+                    token._.affixes_rule = None
         return doc

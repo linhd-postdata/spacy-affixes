@@ -105,8 +105,10 @@ def build_affixes(affixes_raw):
         for affix in affixes:
             if len(affix.strip()) > 0 and not affix.startswith("#"):
                 affix_split = re.split(r"\s+", affix)
-                key, add, pos_re, _, strip_accent, *_, tokens = affix_split
+                (key, add, pos_re, assign_pos, strip_accent,
+                 *_, assign_lemma, _, tokens) = affix_split
                 add = add if add != "*" else ""
+                assign_pos = assign_pos if assign_pos != "*" else ""
                 strip_accent = int(strip_accent) == 0
                 if tokens == "-":
                     text = [key]
@@ -116,7 +118,9 @@ def build_affixes(affixes_raw):
                     "pattern": affix_pos_re.format(key),
                     "kind": affix_kind,
                     "pos_re": fr"{pos_re}",
+                    "assign_pos": assign_pos,
                     "strip_accent": strip_accent,
+                    "assign_lemma": assign_lemma,
                     "affix_add": add.split("|"),
                     "affix_text": text,
                 }
@@ -216,17 +220,40 @@ def build_lexicon(lexicon_raw):
     return lexicon
 
 
-def get_morfo(string, lexicon, regex):
+def get_assigned_lemma(rule, **opts):
+    ralf = {
+        "R": opts["token_left"],
+        "A": opts["affix_text"],
+        "L": opts["lemma"],
+        "F": opts["token_lower"],
+    }
+    return "".join([ralf.get(opt, opt) for opt in rule.split("+")])
+
+
+def get_morfo(string, lexicon, regex, assign_pos, assign_lemma,
+              **assign_lemma_opts):
     # Checks for string in the lexicon
     # Returns EAGLE, UD, tags, lemma
     if string in lexicon:
         entry = lexicon[string]
         for definition in entry:
             if regex.match(definition["eagle"]):
-                return (
-                    definition["eagle"],
-                    definition["ud"],
-                    definition["tags"],
-                    definition["lemma"]
-                )
+                assign_lemma_opts.update({
+                    "lemma": definition["lemma"]
+                })
+                lemma = get_assigned_lemma(assign_lemma, **assign_lemma_opts)
+                if assign_pos:
+                    return (
+                        assign_pos,
+                        eagle2pos(assign_pos),
+                        eagle2tag(assign_pos),
+                        lemma
+                    )
+                else:
+                    return (
+                        definition["eagle"],
+                        definition["ud"],
+                        definition["tags"],
+                        lemma
+                    )
     return None

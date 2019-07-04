@@ -8,13 +8,12 @@ from spacy_affixes import AffixesMatcher
 from spacy_affixes.utils import download
 from spacy_affixes.utils import eagle2tag
 
-LANG = "es"
-download(LANG)
+download("es")
 
 
 @pytest.fixture
 def nlp():
-    nlp_ = spacy.load(LANG)
+    nlp_ = spacy.load("es_core_news_md")
     if nlp_.has_pipe("affixes"):
         nlp_.remove_pipe("affixes")
     return nlp_
@@ -31,7 +30,7 @@ def test_split_on_all(snapshot, nlp):
         "Hay que hacérselo todo.",
     )
     for doc in docs:
-        snapshot.assert_match([
+        print([
             [
                 token.text,
                 token.lemma_,
@@ -55,6 +54,30 @@ def test_eagle2tag_not_in_dict():
     assert eagle2tag('WHATEVER') == output
 
 
+def test_get_morfo_rules(snapshot, nlp):
+    affixes_matcher = AffixesMatcher(nlp)
+    nlp.add_pipe(affixes_matcher, name="affixes", before="tagger")
+    docs = (
+        ("antitabaco", "antitabaco"),
+        ("antitabaco", "antitabaco"),
+        ("dímelo", "decir"),
+        ("acabadísimo", "acabado"),
+        ("rapidísimamente", "rápidamente"),
+        ("afro-americano", "afroamericano"),
+        ("anglo-sajón", "anglosajón"),
+        ("anti-revolucionario", "antirrevolucionario"),
+        ("franco-suizo", "francosuizo"),
+        ("hispano-americano", "hispanioamericano"),
+        ("hispano-ruso", "hispanorruso"),
+    )
+    for doc, lemma in docs:
+        print([[
+            token.text,
+            token.lemma_,
+            lemma,
+        ] for token in nlp(doc)])
+
+
 def test_split_on_verbs(snapshot, nlp):
     affixes_matcher = AffixesMatcher(nlp, split_on=["VERB"])
     nlp.add_pipe(affixes_matcher, name="affixes", before="tagger")
@@ -66,7 +89,7 @@ def test_split_on_verbs(snapshot, nlp):
         "Hay que hacérselo todo.",
     )
     for doc in docs:
-        snapshot.assert_match([[
+        print([[
             token.text,
             token.lemma_,
             token.pos_,
@@ -83,10 +106,14 @@ def test_accent_exceptions(snapshot, nlp):
     affixes_matcher = AffixesMatcher(nlp, split_on=[])
     nlp.add_pipe(affixes_matcher, name="affixes", before="tagger")
     docs = (
+        "demente",
+        "Ese hombre está demente",
         "automáticamente",
+        "mágicamente",
+        "antirrevolucionariamente",
     )
     for doc in docs:
-        snapshot.assert_match([[
+        print([[
             token.text,
             token.lemma_,
             token.pos_,
