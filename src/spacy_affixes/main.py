@@ -84,10 +84,12 @@ class AffixesMatcher(object):
                 ])
 
     def apply_rules(self, retokenizer, token, rule):
+        if (rule["always_apply"]
+                or (token.is_oov or token not in self.lexicon)) is False:
+            return
         strip_accent_exceptions = (
             "automática",
         )
-        import ipdb; ipdb.set_trace()
         for affix_add in rule["affix_add"]:
             strip_accent = rule["strip_accent"]
             token_sub = re.sub(rule["pattern"], '', token.text)

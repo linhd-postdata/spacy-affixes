@@ -996,20 +996,6 @@ snapshots['test_split_on_verbs 5'] = [
 
 snapshots['test_accent_exceptions 1'] = [
     [
-        'demente',
-        'demente',
-        'ADJ',
-        'ADJ__Number=Sing',
-        False,
-        None,
-        None,
-        None,
-        0
-    ]
-]
-
-snapshots['test_accent_exceptions 2'] = [
-    [
         'Ese',
         'Ese',
         'DET',
@@ -1055,7 +1041,7 @@ snapshots['test_accent_exceptions 2'] = [
     ]
 ]
 
-snapshots['test_accent_exceptions 3'] = [
+snapshots['test_accent_exceptions 2'] = [
     [
         'automáticamente',
         'automático',
@@ -1069,7 +1055,7 @@ snapshots['test_accent_exceptions 3'] = [
     ]
 ]
 
-snapshots['test_accent_exceptions 4'] = [
+snapshots['test_accent_exceptions 3'] = [
     [
         'mágicamente',
         'mágicamente',
@@ -1083,7 +1069,7 @@ snapshots['test_accent_exceptions 4'] = [
     ]
 ]
 
-snapshots['test_accent_exceptions 5'] = [
+snapshots['test_accent_exceptions 4'] = [
     [
         'antirrevolucionariamente',
         'antirrevolucionario',

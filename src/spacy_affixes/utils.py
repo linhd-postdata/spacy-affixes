@@ -106,10 +106,11 @@ def build_affixes(affixes_raw):
             if len(affix.strip()) > 0 and not affix.startswith("#"):
                 affix_split = re.split(r"\s+", affix)
                 (key, add, pos_re, assign_pos, strip_accent,
-                 *_, assign_lemma, _, tokens) = affix_split
+                 *_, assign_lemma, always_apply, tokens) = affix_split
                 add = add if add != "*" else ""
                 assign_pos = assign_pos if assign_pos != "*" else ""
                 strip_accent = int(strip_accent) == 0
+                always_apply = int(always_apply) == 1
                 if tokens == "-":
                     text = [key]
                 else:
@@ -121,6 +122,7 @@ def build_affixes(affixes_raw):
                     "assign_pos": assign_pos,
                     "strip_accent": strip_accent,
                     "assign_lemma": assign_lemma,
+                    "always_apply": always_apply,
                     "affix_add": add.split("|"),
                     "affix_text": text,
                 }
