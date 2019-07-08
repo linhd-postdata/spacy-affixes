@@ -38,7 +38,7 @@ setup(
     license="Apache Software License 2.0",
     long_description=readme + '\n\n' + history,
     url='https://github.com/linhd-postdata/spacy-affixes',
-    version='0.1.3',
+    version='0.1.4',
     include_package_data=True,
     keywords='spacy_affixes',
     name='spacy_affixes',
