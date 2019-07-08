@@ -13,7 +13,7 @@ download("es")
 
 @pytest.fixture
 def nlp():
-    nlp_ = spacy.load("es_core_news_md")
+    nlp_ = spacy.load("es")
     if nlp_.has_pipe("affixes"):
         nlp_.remove_pipe("affixes")
     return nlp_
@@ -62,7 +62,7 @@ def test_get_morfo_rules(snapshot, nlp):
         ("dímelo", "decir"),
         # 'acabado' should be the lemma
         ("acabadísimo", "acabar"),
-        # 'rápidamente' or 'rapidísimo'?
+        # 'rápidamente' should be the lemma
         ("rapidísimamente", "rapidísimamente"),
         ("automáticamente", "automático"),
         # ("afro-americano", "afroamericano"),
@@ -90,8 +90,6 @@ def test_split_on_verbs(snapshot, nlp):
         snapshot.assert_match([[
             token.text,
             token.lemma_,
-            token.pos_,
-            token.tag_,
             token._.has_affixes,
             token._.affixes_rule,
             token._.affixes_kind,
@@ -113,8 +111,6 @@ def test_accent_exceptions(snapshot, nlp):
         snapshot.assert_match([[
             token.text,
             token.lemma_,
-            token.pos_,
-            token.tag_,
             token._.has_affixes,
             token._.affixes_rule,
             token._.affixes_kind,
