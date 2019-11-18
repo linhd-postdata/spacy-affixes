@@ -11,7 +11,6 @@ Parameters:
 For example, the default behaviour is:
     python -m spacy_affixes download es 4.1
 """
-# pragma: no cover
 if __name__ == "__main__":
     argv_len = len(sys.argv)
     if 2 <= argv_len <= 4 and sys.argv[1] == "download":

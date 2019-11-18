@@ -90,6 +90,5 @@ Where :code:`lang` is the 2-character ISO 639-1 code for a supported language, a
 
 Notes
 -----
-- There is not yet support for Universal Dependencies tags since a good mapping is missing.
 - Some decisions might feel idiosyncratic since the purpose of this library at the beginning was to just split clitics in Spanish texts. 
  

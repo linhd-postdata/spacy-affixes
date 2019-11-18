@@ -4,7 +4,6 @@ import re
 
 from spacy.matcher import Matcher
 from spacy.tokens import Token
-
 from .utils import AFFIXES_SUFFIX
 from .utils import get_morfo
 from .utils import load_affixes
@@ -14,7 +13,8 @@ from .utils import token_transform
 
 class AffixesMatcher(object):
 
-    def __init__(self, nlp, rules=None, lexicon=None, split_on=None):
+    def __init__(self, nlp, rules=None, lexicon=None, split_on=None,
+                 replace_lemmas=True):
         """
         :param nlp: SpaCy NLP object with the language already loaded
         :param rules: Dictionary of rules for affixes handling. Each dict
@@ -53,11 +53,15 @@ class AffixesMatcher(object):
                         compatibilities.
         :param split_on: Tuple of UD POS to split tokens on. Defaults to
                          verbs. A `*` means split whenever possible.
+        :param replace_lemmas: Boolean specifying whether the lemma should be
+                               replaced with the output of the Freeling rules
         """
         self.nlp = nlp
         self.rules = load_affixes() if rules is None else rules
         self.lexicon = load_lexicon() if lexicon is None else lexicon
         self.split_on = ("VERB", ) if split_on is None else split_on
+        self.lemma_lookup = self.nlp.vocab.lookups.get_table("lemma_lookup")
+        self.replace_lemmas = replace_lemmas
         if None in (self.lexicon, self.rules):
             raise ValueError("""
             Data for affixes rules or lexicon data is missing. Check
@@ -70,10 +74,11 @@ class AffixesMatcher(object):
             """)
         if not Token.has_extension("has_affixes"):
             Token.set_extension("has_affixes", default=False)
+            Token.set_extension("affixes_kind", default=None)
+            Token.set_extension("affixes_lemma", default=None)
+            Token.set_extension("affixes_length", default=0)
             Token.set_extension("affixes_rule", default=None)
             Token.set_extension("affixes_text", default=None)
-            Token.set_extension("affixes_kind", default=None)
-            Token.set_extension("affixes_length", default=0)
         self.matcher = Matcher(nlp.vocab)
         for rule_key, rules in self.rules.items():
             for rule in rules:
@@ -95,7 +100,6 @@ class AffixesMatcher(object):
             token_sub = re.sub(rule["pattern"], '', token.text)
             token_left = token_transform(
                 token_sub,
-                rule["kind"],
                 affix_add,
                 False if token_sub in strip_accent_exceptions else strip_accent
             )
@@ -112,14 +116,14 @@ class AffixesMatcher(object):
                 rule["assign_lemma"],
                 **morfo_lemma_opts
             )
-            if (token_left and morfo and not token._.has_affixes):
+            if token_left and morfo and not token._.has_affixes:
                 _, token_ud, token_tags, token_lemma = morfo
                 affixes_length = (
                     len(rule["affix_text"]) or int(affix_add != "")
                 )
                 if rule["kind"] == AFFIXES_SUFFIX:
                     heads = [(token, 1)] + (affixes_length * [(token, 0)])
-                    token.lemma_ = self.nlp.Defaults.lemma_lookup.get(
+                    token.lemma_ = self.lemma_lookup.get(
                         token_left.lower(),
                         token_lemma
                     )
@@ -140,6 +144,7 @@ class AffixesMatcher(object):
                 token._.affixes_text = token_left
                 token._.affixes_kind = rule["kind"]
                 token._.affixes_length = affixes_length
+                token._.affixes_lemma = token.lemma_
                 token._.has_affixes = True
 
     def __call__(self, doc):
@@ -157,4 +162,9 @@ class AffixesMatcher(object):
                         self.apply_rules(retokenizer, token, rule)
                 if not token._.has_affixes:
                     token._.affixes_rule = None
+        if self.replace_lemmas:
+            # Tokens are views of C structs
+            for index, _ in enumerate(doc):
+                if doc[index]._.has_affixes and doc[index]._.affixes_lemma:
+                    doc[index].lemma_ = doc[index]._.affixes_lemma
         return doc

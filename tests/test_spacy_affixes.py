@@ -1,12 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """Tests for `spacy_affixes` package."""
+import json
+from pathlib import Path
+
 import pytest
 import spacy
-
 from spacy_affixes import AffixesMatcher
 from spacy_affixes.utils import download
 from spacy_affixes.utils import eagle2tag
+from spacy_affixes.eagles import eagles2ud
 
 download("es")
 
@@ -17,6 +20,12 @@ def nlp():
     if nlp_.has_pipe("affixes"):
         nlp_.remove_pipe("affixes")
     return nlp_
+
+
+@pytest.fixture
+def test_eagles():
+    return json.loads(
+        Path("tests/fixtures/test_eagles.json").read_text())
 
 
 def test_split_on_all(snapshot, nlp):
@@ -45,7 +54,7 @@ def test_split_on_all(snapshot, nlp):
 
 
 def test_eagle2tag():
-    output = 'NOUN__Gender=Masc|Number=Sing'
+    output = 'Gender=Masc|Number=Sing'
     assert eagle2tag('NCMS000') == output
 
 
@@ -117,3 +126,12 @@ def test_accent_exceptions(snapshot, nlp):
             token._.affixes_text,
             token._.affixes_length,
         ] for token in nlp(doc)])
+
+
+def test_eagles2ud_dict(test_eagles):
+    for idx, eagle in enumerate(test_eagles):
+        res = eagles2ud(eagle).split("__")
+        output = set(res[1].split("|"))
+        res_test = set(test_eagles[eagle]["Tag"].split("|"))
+        assert output == res_test
+

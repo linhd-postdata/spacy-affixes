@@ -7,12 +7,51 @@ from snapshottest import Snapshot
 
 snapshots = Snapshot()
 
+snapshots['test_accent_exceptions 1'] = [
+    [
+        'Ese',
+        'Ese',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        'hombre',
+        'hombre',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        'está',
+        'estar',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        'demente',
+        'demente',
+        False,
+        None,
+        None,
+        None,
+        0
+    ]
+]
+
 snapshots['test_split_on_all 1'] = [
     [
         'Cuénta',
         'contar',
         'VERB',
-        'VERB__Mood=Imp|Number=Sing|Person=2|VerbForm=Fin',
+        'Mood=Imp|VerbForm=Fin|Person=2|Number=Sing',
         True,
         'suffix_melo',
         'suffix',
@@ -67,7 +106,7 @@ snapshots['test_split_on_all 1'] = [
         'di',
         'decir',
         'VERB',
-        'VERB__Mood=Imp|Number=Sing|Person=2|VerbForm=Fin',
+        'Mood=Imp|VerbForm=Fin|Person=2|Number=Sing',
         True,
         'suffix_lo',
         'suffix',
@@ -78,7 +117,7 @@ snapshots['test_split_on_all 1'] = [
         'lo',
         'el',
         'DET',
-        'DET__Gender=Masc|Number=Sing|PronType=Art',
+        'DET__Definite=Def|Number=Sing|PronType=Art',
         False,
         None,
         None,
@@ -132,8 +171,8 @@ snapshots['test_split_on_all 1'] = [
     [
         'des',
         'dar',
-        'VERB',
-        'VERB__Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin',
+        'ADP',
+        'ADP__AdpType=Prep',
         False,
         None,
         None,
@@ -191,7 +230,7 @@ snapshots['test_split_on_all 2'] = [
         'misma',
         'mismo',
         'ADV',
-        'ADV___',
+        'X',
         True,
         'suffix_mente',
         'suffix',
@@ -224,7 +263,7 @@ snapshots['test_split_on_all 2'] = [
         'hacér',
         'hacer',
         'VERB',
-        'VERB__VerbForm=Inf',
+        'VerbForm=Inf',
         True,
         'suffix_selo',
         'suffix',
@@ -233,9 +272,9 @@ snapshots['test_split_on_all 2'] = [
     ],
     [
         'se',
-        'despacio',
+        'se',
         'ADV',
-        'ADV___',
+        'X',
         False,
         None,
         None,
@@ -257,7 +296,7 @@ snapshots['test_split_on_all 2'] = [
         'despac',
         'despacio',
         'ADV',
-        'ADV___',
+        'X',
         True,
         'suffix_ito',
         'suffix',
@@ -267,8 +306,8 @@ snapshots['test_split_on_all 2'] = [
     [
         'ito',
         'ito',
-        'ADJ',
-        'ADJ__Number=Sing',
+        'PROPN',
+        'PROPN___',
         False,
         None,
         None,
@@ -302,9 +341,9 @@ snapshots['test_split_on_all 3'] = [
     ],
     [
         'hispano',
-        'hispano',
+        'hispanoamericano',
         'ADJ',
-        'X',
+        'Gender=Masc|Number=Sing',
         True,
         'prefix_hispano',
         'prefix',
@@ -362,7 +401,7 @@ snapshots['test_split_on_all 4'] = [
         'Di',
         'decir',
         'VERB',
-        'VERB__Mood=Imp|Number=Sing|Person=2|VerbForm=Fin',
+        'Mood=Imp|VerbForm=Fin|Person=2|Number=Sing',
         True,
         'suffix_me',
         'suffix',
@@ -373,7 +412,7 @@ snapshots['test_split_on_all 4'] = [
         'me',
         'me',
         'PRON',
-        'PRON__Number=Sing|Person=1',
+        'PRON__Number=Sing|Person=1|PronType=Prs',
         False,
         None,
         None,
@@ -464,7 +503,7 @@ snapshots['test_split_on_all 5'] = [
         'hacér',
         'hacer',
         'VERB',
-        'VERB__VerbForm=Inf',
+        'VerbForm=Inf',
         True,
         'suffix_selo',
         'suffix',
@@ -694,7 +733,7 @@ snapshots['test_split_on_verbs 2'] = [
     ],
     [
         'se',
-        'despacio',
+        'se',
         False,
         None,
         None,
@@ -902,45 +941,6 @@ snapshots['test_split_on_verbs 5'] = [
     [
         '.',
         '.',
-        False,
-        None,
-        None,
-        None,
-        0
-    ]
-]
-
-snapshots['test_accent_exceptions 1'] = [
-    [
-        'Ese',
-        'Ese',
-        False,
-        None,
-        None,
-        None,
-        0
-    ],
-    [
-        'hombre',
-        'hombre',
-        False,
-        None,
-        None,
-        None,
-        0
-    ],
-    [
-        'está',
-        'estar',
-        False,
-        None,
-        None,
-        None,
-        0
-    ],
-    [
-        'demente',
-        'demente',
         False,
         None,
         None,

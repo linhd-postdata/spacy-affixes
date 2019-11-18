@@ -5,7 +5,7 @@ import sys
 import unicodedata
 from collections import defaultdict
 from urllib.request import urlopen
-from .eagles import EAGLES_TO_UD_DICT
+from .eagles import eagles2ud
 
 AFFIXES_SUFFIX = "suffix"
 AFFIXES_PREFIX = "prefix"
@@ -87,7 +87,7 @@ def load_lexicon(lang="es", version="4.1"):
 def download_affixes(lang="es", version="4.1"):
     sys.stdout.write(f"Downloading affixes {lang}-{version}...\n")
     url = (f"https://raw.githubusercontent.com/TALP-UPC/FreeLing/"
-           f"{version}/data/{lang}/afixos.dat")
+           f"v{version}/data/{lang}/afixos.dat")
     affixes_raw = urlopen(url).read().decode('utf-8')
     return build_affixes(affixes_raw)
 
@@ -142,28 +142,16 @@ def eagle2tag(eagle):
     :param eagle: EAGLES tag to be converted
     :return: Equivalent UD tag
     """
-    return EAGLES_TO_UD_DICT.get(eagle, "X")
+    tag = eagles2ud(eagle).split('__')[1]
+    return tag if tag != '' else 'X'
 
 
 def eagle2pos(eagle):
-    mapper = {
-        "A": "ADJ",
-        "R": "ADV",
-        "D": "DET",
-        "N": "NOUN",
-        "V": "VERB",
-        "P": "PRON",
-        "C": "CONJ",
-        "I": "INTJ",
-        "S": "ADP",
-        "F": "PUNCT",
-        "Z": "NUM",
-        "W": "NUM",  # Dates (W) are not standard EAGLE
-    }
-    return mapper.get(eagle[0], "X")
+    pos = eagles2ud(eagle).split('__')[0]
+    return pos
 
 
-def token_transform(string, kind, add, strip_accent):
+def token_transform(string, add, strip_accent):
     if add == AFFIXES_PREFIX:
         prefix, suffix = add, ""
     else:
@@ -238,12 +226,15 @@ def get_morfo(string, lexicon, regex, assign_pos, assign_lemma,
     # Returns EAGLE, UD, tags, lemma
     if string in lexicon:
         entry = lexicon[string]
+        print(regex, entry)
         for definition in entry:
             if regex.match(definition["eagle"]):
                 assign_lemma_opts.update({
                     "lemma": definition["lemma"]
                 })
+                print(definition["lemma"])
                 lemma = get_assigned_lemma(assign_lemma, **assign_lemma_opts)
+                print(f" el lema de get_morfo es {lemma}")
                 if assign_pos:
                     return (
                         assign_pos,

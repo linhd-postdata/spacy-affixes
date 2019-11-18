@@ -1,0 +1,2286 @@
+{
+  "NCMS000": {
+    "PoS": "NOUN",
+    "Tag": "Gender=Masc|Number=Sing"
+  },
+  "NCMP000": {
+    "PoS": "NOUN",
+    "Tag": "Gender=Masc|Number=Plur"
+  },
+  "NCFS000": {
+    "PoS": "NOUN",
+    "Tag": "Gender=Fem|Number=Sing"
+  },
+  "NCFP000": {
+    "PoS": "NOUN",
+    "Tag": "Gender=Fem|Number=Plur"
+  },
+  "NCCS000": {
+    "PoS": "NOUN",
+    "Tag": "Number=Sing"
+  },
+  "NCCP000": {
+    "PoS": "NOUN",
+    "Tag": "Number=Plur"
+  },
+  "NPMSS00": {
+    "PoS": "PROPN",
+    "Tag": "Gender=Masc|NameType=Prs|Number=Sing"
+  },
+  "NPMPS00": {
+    "PoS": "PROPN",
+    "Tag": "Gender=Masc|NameType=Prs|Number=Plur"
+  },
+  "NPFSS00": {
+    "PoS": "PROPN",
+    "Tag": "Gender=Fem|NameType=Prs|Number=Sing"
+  },
+  "NPFPS00": {
+    "PoS": "PROPN",
+    "Tag": "Gender=Fem|NameType=Prs|Number=Plur"
+  },
+  "NPCSS00": {
+    "PoS": "PROPN",
+    "Tag": "NameType=Prs|Number=Sing"
+  },
+  "NPCPS00": {
+    "PoS": "PROPN",
+    "Tag": "NameType=Prs|Number=Plur"
+  },
+  "AQVMS00": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Gender=Masc|Number=Sing"
+  },
+  "AQVMP00": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Gender=Masc|Number=Plur"
+  },
+  "AQVFS00": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Gender=Fem|Number=Sing"
+  },
+  "AQVFP00": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Gender=Fem|Number=Plur"
+  },
+  "AQVCS00": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Number=Sing"
+  },
+  "AQVCP00": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Number=Plur"
+  },
+  "AQVCN00": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos"
+  },
+  "AQSMS00": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Sup|Gender=Masc|Number=Sing"
+  },
+  "AQSMP00": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Sup|Gender=Masc|Number=Plur"
+  },
+  "AQSFS00": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Sup|Gender=Fem|Number=Sing"
+  },
+  "AQSFP00": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Sup|Gender=Fem|Number=Plur"
+  },
+  "AQSCS00": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Sup|Number=Sing"
+  },
+  "AQSCP00": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Sup|Number=Plur"
+  },
+  "AQSCN00": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Sup"
+  },
+  "APVMS1S": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Gender=Masc|Number=Sing|Number[psor]=Sing|Person=1|Poss=Yes"
+  },
+  "APVMS2S": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Gender=Masc|Number=Sing|Number[psor]=Sing|Person=2|Poss=Yes"
+  },
+  "APVMS3S": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes"
+  },
+  "APVMS1P": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Gender=Masc|Number=Sing|Number[psor]=Plur|Person=1|Poss=Yes"
+  },
+  "APVMS2P": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Gender=Masc|Number=Sing|Number[psor]=Plur|Person=2|Poss=Yes"
+  },
+  "APVMS3P": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Gender=Masc|Number=Sing|Number[psor]=Plur|Person=3|Poss=Yes"
+  },
+  "APVMP1S": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Gender=Masc|Number=Plur|Number[psor]=Sing|Person=1|Poss=Yes"
+  },
+  "APVMP2S": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Gender=Masc|Number=Plur|Number[psor]=Sing|Person=2|Poss=Yes"
+  },
+  "APVMP3S": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Gender=Masc|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes"
+  },
+  "APVMP1P": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Gender=Masc|Number=Plur|Number[psor]=Plur|Person=1|Poss=Yes"
+  },
+  "APVMP2P": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Gender=Masc|Number=Plur|Number[psor]=Plur|Person=2|Poss=Yes"
+  },
+  "APVMP3P": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Gender=Masc|Number=Plur|Number[psor]=Plur|Person=3|Poss=Yes"
+  },
+  "APVFS1S": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Gender=Fem|Number=Sing|Number[psor]=Sing|Person=1|Poss=Yes"
+  },
+  "APVFS2S": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Gender=Fem|Number=Sing|Number[psor]=Sing|Person=2|Poss=Yes"
+  },
+  "APVFS3S": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes"
+  },
+  "APVFS1P": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Gender=Fem|Number=Sing|Number[psor]=Plur|Person=1|Poss=Yes"
+  },
+  "APVFS2P": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Gender=Fem|Number=Sing|Number[psor]=Plur|Person=2|Poss=Yes"
+  },
+  "APVFS3P": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Gender=Fem|Number=Sing|Number[psor]=Plur|Person=3|Poss=Yes"
+  },
+  "APVFP1S": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Gender=Fem|Number=Plur|Number[psor]=Sing|Person=1|Poss=Yes"
+  },
+  "APVFP2S": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Gender=Fem|Number=Plur|Number[psor]=Sing|Person=2|Poss=Yes"
+  },
+  "APVFP3S": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Gender=Fem|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes"
+  },
+  "APVFP1P": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Gender=Fem|Number=Plur|Number[psor]=Plur|Person=1|Poss=Yes"
+  },
+  "APVFP2P": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Gender=Fem|Number=Plur|Number[psor]=Plur|Person=2|Poss=Yes"
+  },
+  "APVFP3P": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Gender=Fem|Number=Plur|Number[psor]=Plur|Person=3|Poss=Yes"
+  },
+  "APVCS1S": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Number=Sing|Number[psor]=Sing|Person=1|Poss=Yes"
+  },
+  "APVCS2S": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Number=Sing|Number[psor]=Sing|Person=2|Poss=Yes"
+  },
+  "APVCS3S": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes"
+  },
+  "APVCS1P": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Number=Sing|Number[psor]=Plur|Person=1|Poss=Yes"
+  },
+  "APVCS2P": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Number=Sing|Number[psor]=Plur|Person=2|Poss=Yes"
+  },
+  "APVCS3P": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Number=Sing|Number[psor]=Plur|Person=3|Poss=Yes"
+  },
+  "APVCP1S": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Number=Plur|Number[psor]=Sing|Person=1|Poss=Yes"
+  },
+  "APVCP2S": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Number=Plur|Number[psor]=Sing|Person=2|Poss=Yes"
+  },
+  "APVCP3S": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes"
+  },
+  "APVCP1P": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Number=Plur|Number[psor]=Plur|Person=1|Poss=Yes"
+  },
+  "APVCP2P": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Number=Plur|Number[psor]=Plur|Person=2|Poss=Yes"
+  },
+  "APVCP3P": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Number=Plur|Number[psor]=Plur|Person=3|Poss=Yes"
+  },
+  "APVCN1S": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Number[psor]=Sing|Person=1|Poss=Yes"
+  },
+  "APVCN2S": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Number[psor]=Sing|Person=2|Poss=Yes"
+  },
+  "APVCN3S": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Number[psor]=Sing|Person=3|Poss=Yes"
+  },
+  "APVCN1P": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Number[psor]=Plur|Person=1|Poss=Yes"
+  },
+  "APVCN2P": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Number[psor]=Plur|Person=2|Poss=Yes"
+  },
+  "APVCN3P": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Pos|Number[psor]=Plur|Person=3|Poss=Yes"
+  },
+  "AO0MS00": {
+    "PoS": "ADJ",
+    "Tag": "Gender=Masc|Number=Sing|NumType=Ord"
+  },
+  "AO0MP00": {
+    "PoS": "ADJ",
+    "Tag": "Gender=Masc|Number=Plur|NumType=Ord"
+  },
+  "AO0FS00": {
+    "PoS": "ADJ",
+    "Tag": "Gender=Fem|Number=Sing|NumType=Ord"
+  },
+  "AO0FP00": {
+    "PoS": "ADJ",
+    "Tag": "Gender=Fem|Number=Plur|NumType=Ord"
+  },
+  "AO0CS00": {
+    "PoS": "ADJ",
+    "Tag": "Number=Sing|NumType=Ord"
+  },
+  "AO0CP00": {
+    "PoS": "ADJ",
+    "Tag": "Number=Plur|NumType=Ord"
+  },
+  "AO0CN00": {
+    "PoS": "ADJ",
+    "Tag": "NumType=Ord"
+  },
+  "PP10SN0": {
+    "PoS": "PRON",
+    "Tag": "Case=Nom|Number=Sing|Person=1|PronType=Prs"
+  },
+  "PP10SD0": {
+    "PoS": "PRON",
+    "Tag": "Case=Dat|Number=Sing|Person=1|PronType=Prs"
+  },
+  "PP10SA0": {
+    "PoS": "PRON",
+    "Tag": "Case=Acc|Number=Sing|Person=1|PronType=Prs"
+  },
+  "PP20SN0": {
+    "PoS": "PRON",
+    "Tag": "Case=Nom|Number=Sing|Person=2|PronType=Prs"
+  },
+  "PP20SD0": {
+    "PoS": "PRON",
+    "Tag": "Case=Dat|Number=Sing|Person=2|PronType=Prs"
+  },
+  "PP20SA0": {
+    "PoS": "PRON",
+    "Tag": "Case=Acc|Number=Sing|Person=2|PronType=Prs"
+  },
+  "PP20SNP": {
+    "PoS": "PRON",
+    "Tag": "Case=Nom|Number=Sing|Person=2|Polite=Form|PronType=Prs"
+  },
+  "PP20SDP": {
+    "PoS": "PRON",
+    "Tag": "Case=Dat|Number=Sing|Person=2|Polite=Form|PronType=Prs"
+  },
+  "PP20SAP": {
+    "PoS": "PRON",
+    "Tag": "Case=Acc|Number=Sing|Person=2|Polite=Form|PronType=Prs"
+  },
+  "PP3MSN0": {
+    "PoS": "PRON",
+    "Tag": "Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs"
+  },
+  "PP3MSD0": {
+    "PoS": "PRON",
+    "Tag": "Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs"
+  },
+  "PP3MSA0": {
+    "PoS": "PRON",
+    "Tag": "Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs"
+  },
+  "PP3FSN0": {
+    "PoS": "PRON",
+    "Tag": "Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs"
+  },
+  "PP3FSD0": {
+    "PoS": "PRON",
+    "Tag": "Case=Dat|Gender=Fem|Number=Sing|Person=3|PronType=Prs"
+  },
+  "PP3FSA0": {
+    "PoS": "PRON",
+    "Tag": "Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs"
+  },
+  "PP10PN0": {
+    "PoS": "PRON",
+    "Tag": "Case=Nom|Number=Plur|Person=1|PronType=Prs"
+  },
+  "PP10PD0": {
+    "PoS": "PRON",
+    "Tag": "Case=Dat|Number=Plur|Person=1|PronType=Prs"
+  },
+  "PP10PA0": {
+    "PoS": "PRON",
+    "Tag": "Case=Acc|Number=Plur|Person=1|PronType=Prs"
+  },
+  "PP20PN0": {
+    "PoS": "PRON",
+    "Tag": "Case=Nom|Number=Plur|Person=2|PronType=Prs"
+  },
+  "PP20PD0": {
+    "PoS": "PRON",
+    "Tag": "Case=Dat|Number=Plur|Person=2|PronType=Prs"
+  },
+  "PP20PA0": {
+    "PoS": "PRON",
+    "Tag": "Case=Acc|Number=Plur|Person=2|PronType=Prs"
+  },
+  "PP20PNP": {
+    "PoS": "PRON",
+    "Tag": "Case=Nom|Number=Plur|Person=2|Polite=Form|PronType=Prs"
+  },
+  "PP20PDP": {
+    "PoS": "PRON",
+    "Tag": "Case=Dat|Number=Plur|Person=2|Polite=Form|PronType=Prs"
+  },
+  "PP20PAP": {
+    "PoS": "PRON",
+    "Tag": "Case=Acc|Number=Plur|Person=2|Polite=Form|PronType=Prs"
+  },
+  "PP3MPN0": {
+    "PoS": "PRON",
+    "Tag": "Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs"
+  },
+  "PP3MPD0": {
+    "PoS": "PRON",
+    "Tag": "Case=Dat|Gender=Masc|Number=Plur|Person=3|PronType=Prs"
+  },
+  "PP3MPA0": {
+    "PoS": "PRON",
+    "Tag": "Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs"
+  },
+  "PP3FPN0": {
+    "PoS": "PRON",
+    "Tag": "Case=Nom|Gender=Fem|Number=Plur|Person=3|PronType=Prs"
+  },
+  "PP3FPD0": {
+    "PoS": "PRON",
+    "Tag": "Case=Dat|Gender=Fem|Number=Plur|Person=3|PronType=Prs"
+  },
+  "PP3FPA0": {
+    "PoS": "PRON",
+    "Tag": "Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs"
+  },
+  "PD00000": {
+    "PoS": "PRON",
+    "Tag": "PronType=Dem"
+  },
+  "PT00000": {
+    "PoS": "PRON",
+    "Tag": "PronType=Int"
+  },
+  "PR00000": {
+    "PoS": "PRON",
+    "Tag": "PronType=Rel"
+  },
+  "PE00000": {
+    "PoS": "PRON",
+    "Tag": "PronType=Exc"
+  },
+  "DA0MS0": {
+    "PoS": "DET",
+    "Tag": "Gender=Masc|Number=Sing|PronType=Art|Definite=Def"
+  },
+  "DA0FS0": {
+    "PoS": "DET",
+    "Tag": "Gender=Fem|Number=Sing|PronType=Art|Definite=Def"
+  },
+  "DA0MP0": {
+    "PoS": "DET",
+    "Tag": "Gender=Masc|Number=Plur|PronType=Art|Definite=Def"
+  },
+  "DA0FP0": {
+    "PoS": "DET",
+    "Tag": "Gender=Fem|Number=Plur|PronType=Art|Definite=Def"
+  },
+  "DP1MSS": {
+    "PoS": "DET",
+    "Tag": "Gender=Masc|Number=Sing|Number[psor]=Sing|Person=1|PronType=Prs|Poss=Yes"
+  },
+  "DP1MPS": {
+    "PoS": "DET",
+    "Tag": "Gender=Masc|Number=Plur|Number[psor]=Sing|Person=1|PronType=Prs|Poss=Yes"
+  },
+  "DP1FSS": {
+    "PoS": "DET",
+    "Tag": "Gender=Fem|Number=Sing|Number[psor]=Sing|Person=1|PronType=Prs|Poss=Yes"
+  },
+  "DP1FPS": {
+    "PoS": "DET",
+    "Tag": "Gender=Fem|Number=Plur|Number[psor]=Sing|Person=1|PronType=Prs|Poss=Yes"
+  },
+  "DP2MSS": {
+    "PoS": "DET",
+    "Tag": "Gender=Masc|Number=Sing|Number[psor]=Sing|Person=2|PronType=Prs|Poss=Yes"
+  },
+  "DP2MPS": {
+    "PoS": "DET",
+    "Tag": "Gender=Masc|Number=Plur|Number[psor]=Sing|Person=2|PronType=Prs|Poss=Yes"
+  },
+  "DP2FSS": {
+    "PoS": "DET",
+    "Tag": "Gender=Fem|Number=Sing|Number[psor]=Sing|Person=2|PronType=Prs|Poss=Yes"
+  },
+  "DP2FPS": {
+    "PoS": "DET",
+    "Tag": "Gender=Fem|Number=Plur|Number[psor]=Sing|Person=2|PronType=Prs|Poss=Yes"
+  },
+  "DP3MSS": {
+    "PoS": "DET",
+    "Tag": "Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|PronType=Prs|Poss=Yes"
+  },
+  "DP3MPS": {
+    "PoS": "DET",
+    "Tag": "Gender=Masc|Number=Plur|Number[psor]=Sing|Person=3|PronType=Prs|Poss=Yes"
+  },
+  "DP3FSS": {
+    "PoS": "DET",
+    "Tag": "Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|PronType=Prs|Poss=Yes"
+  },
+  "DP3FPS": {
+    "PoS": "DET",
+    "Tag": "Gender=Fem|Number=Plur|Number[psor]=Sing|Person=3|PronType=Prs|Poss=Yes"
+  },
+  "DP1MSP": {
+    "PoS": "DET",
+    "Tag": "Gender=Masc|Number=Sing|Number[psor]=Plur|Person=1|PronType=Prs|Poss=Yes"
+  },
+  "DP1MPP": {
+    "PoS": "DET",
+    "Tag": "Gender=Masc|Number=Plur|Number[psor]=Plur|Person=1|PronType=Prs|Poss=Yes"
+  },
+  "DP1FSP": {
+    "PoS": "DET",
+    "Tag": "Gender=Fem|Number=Sing|Number[psor]=Plur|Person=1|PronType=Prs|Poss=Yes"
+  },
+  "DP1FPP": {
+    "PoS": "DET",
+    "Tag": "Gender=Fem|Number=Plur|Number[psor]=Plur|Person=1|PronType=Prs|Poss=Yes"
+  },
+  "DP2MSP": {
+    "PoS": "DET",
+    "Tag": "Gender=Masc|Number=Sing|Number[psor]=Plur|Person=2|PronType=Prs|Poss=Yes"
+  },
+  "DP2MPP": {
+    "PoS": "DET",
+    "Tag": "Gender=Masc|Number=Plur|Number[psor]=Plur|Person=2|PronType=Prs|Poss=Yes"
+  },
+  "DP2FSP": {
+    "PoS": "DET",
+    "Tag": "Gender=Fem|Number=Sing|Number[psor]=Plur|Person=2|PronType=Prs|Poss=Yes"
+  },
+  "DP2FPP": {
+    "PoS": "DET",
+    "Tag": "Gender=Fem|Number=Plur|Number[psor]=Plur|Person=2|PronType=Prs|Poss=Yes"
+  },
+  "DP3MSP": {
+    "PoS": "DET",
+    "Tag": "Gender=Masc|Number=Sing|Number[psor]=Plur|Person=3|PronType=Prs|Poss=Yes"
+  },
+  "DP3MPP": {
+    "PoS": "DET",
+    "Tag": "Gender=Masc|Number=Plur|Number[psor]=Plur|Person=3|PronType=Prs|Poss=Yes"
+  },
+  "DP3FSP": {
+    "PoS": "DET",
+    "Tag": "Gender=Fem|Number=Sing|Number[psor]=Plur|Person=3|PronType=Prs|Poss=Yes"
+  },
+  "DP3FPP": {
+    "PoS": "DET",
+    "Tag": "Gender=Fem|Number=Plur|Number[psor]=Plur|Person=3|PronType=Prs|Poss=Yes"
+  },
+  "DD0MS0": {
+    "PoS": "DET",
+    "Tag": "Gender=Masc|Number=Sing|PronType=Dem"
+  },
+  "DD0FS0": {
+    "PoS": "DET",
+    "Tag": "Gender=Fem|Number=Sing|PronType=Dem"
+  },
+  "DD0MP0": {
+    "PoS": "DET",
+    "Tag": "Gender=Masc|Number=Plur|PronType=Dem"
+  },
+  "DD0FP0": {
+    "PoS": "DET",
+    "Tag": "Gender=Fem|Number=Plur|PronType=Dem"
+  },
+  "DT0000": {
+    "PoS": "DET",
+    "Tag": "PronType=Int"
+  },
+  "DR0000": {
+    "PoS": "DET",
+    "Tag": "PronType=Rel"
+  },
+  "DE0000": {
+    "PoS": "DET",
+    "Tag": "PronType=Exc"
+  },
+  "Z": {
+    "PoS": "NUM",
+    "Tag": ""
+  },
+  "VMN0000": {
+    "PoS": "VERB",
+    "Tag": "VerbForm=Inf"
+  },
+  "VMIP1S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin"
+  },
+  "VMIP2S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin"
+  },
+  "VMIP3S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+  },
+  "VMIP1P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin"
+  },
+  "VMIP2P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin"
+  },
+  "VMIP3P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin"
+  },
+  "VMIF1S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin"
+  },
+  "VMIF2S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|Number=Sing|Person=2|Tense=Fut|VerbForm=Fin"
+  },
+  "VMIF3S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin"
+  },
+  "VMIF1P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin"
+  },
+  "VMIF2P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|Number=Plur|Person=2|Tense=Fut|VerbForm=Fin"
+  },
+  "VMIF3P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin"
+  },
+  "VMIS1S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin"
+  },
+  "VMIS2S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|Number=Sing|Person=2|Tense=Past|VerbForm=Fin"
+  },
+  "VMIS3S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin"
+  },
+  "VMIS1P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin"
+  },
+  "VMIS2P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|Number=Plur|Person=2|Tense=Past|VerbForm=Fin"
+  },
+  "VMIS3P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin"
+  },
+  "VMII1S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin"
+  },
+  "VMII2S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|Number=Sing|Person=2|Tense=Imp|VerbForm=Fin"
+  },
+  "VMII3S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin"
+  },
+  "VMII1P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin"
+  },
+  "VMII2P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|Number=Plur|Person=2|Tense=Imp|VerbForm=Fin"
+  },
+  "VMII3P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin"
+  },
+  "VMSP1S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Sub|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin"
+  },
+  "VMSP2S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Sub|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin"
+  },
+  "VMSP3S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+  },
+  "VMSP1P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Sub|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin"
+  },
+  "VMSP2P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Sub|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin"
+  },
+  "VMSP3P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin"
+  },
+  "VMSF1S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Sub|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin"
+  },
+  "VMSF2S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Sub|Number=Sing|Person=2|Tense=Fut|VerbForm=Fin"
+  },
+  "VMSF3S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin"
+  },
+  "VMSF1P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Sub|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin"
+  },
+  "VMSF2P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Sub|Number=Plur|Person=2|Tense=Fut|VerbForm=Fin"
+  },
+  "VMSF3P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Sub|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin"
+  },
+  "VMSI1S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Sub|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin"
+  },
+  "VMSI2S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Sub|Number=Sing|Person=2|Tense=Imp|VerbForm=Fin"
+  },
+  "VMSI3S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin"
+  },
+  "VMSI1P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Sub|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin"
+  },
+  "VMSI2P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Sub|Number=Plur|Person=2|Tense=Imp|VerbForm=Fin"
+  },
+  "VMSI3P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Sub|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin"
+  },
+  "VM0C1S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Cnd|Number=Sing|Person=1"
+  },
+  "VM0C2S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Cnd|Number=Sing|Person=2"
+  },
+  "VM0C3S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Cnd|Number=Sing|Person=3"
+  },
+  "VM0C1P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Cnd|Number=Plur|Person=1"
+  },
+  "VM0C2P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Cnd|Number=Plur|Person=2"
+  },
+  "VM0C3P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Cnd|Number=Plur|Person=3"
+  },
+  "VMM02S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Imp|Number=Sing|Person=2|VerbForm=Fin"
+  },
+  "VMM03S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Imp|Number=Sing|Person=3|VerbForm=Fin"
+  },
+  "VMM01P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Imp|Number=Plur|Person=1|VerbForm=Fin"
+  },
+  "VMM02P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Imp|Number=Plur|Person=2|VerbForm=Fin"
+  },
+  "VMM03P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Imp|Number=Plur|Person=3|VerbForm=Fin"
+  },
+  "VMPS0SM": {
+    "PoS": "VERB",
+    "Tag": "Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part"
+  },
+  "VMPS0SF": {
+    "PoS": "VERB",
+    "Tag": "Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part"
+  },
+  "VMPS0PM": {
+    "PoS": "VERB",
+    "Tag": "Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part"
+  },
+  "VMPS0PF": {
+    "PoS": "VERB",
+    "Tag": "Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part"
+  },
+  "VMGP0SM": {
+    "PoS": "VERB",
+    "Tag": "Gender=Masc|Number=Sing|Tense=Pres|VerbForm=Ger"
+  },
+  "VMGP0SF": {
+    "PoS": "VERB",
+    "Tag": "Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Ger"
+  },
+  "VMGP0PM": {
+    "PoS": "VERB",
+    "Tag": "Gender=Masc|Number=Plur|Tense=Pres|VerbForm=Ger"
+  },
+  "VMGP0PF": {
+    "PoS": "VERB",
+    "Tag": "Gender=Fem|Number=Plur|Tense=Pres|VerbForm=Ger"
+  },
+  "VAN0000": {
+    "PoS": "AUX",
+    "Tag": "VerbForm=Inf"
+  },
+  "VAIP1S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin"
+  },
+  "VAIP2S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin"
+  },
+  "VAIP3S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+  },
+  "VAIP1P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin"
+  },
+  "VAIP2P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin"
+  },
+  "VAIP3P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin"
+  },
+  "VAIF1S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin"
+  },
+  "VAIF2S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Sing|Person=2|Tense=Fut|VerbForm=Fin"
+  },
+  "VAIF3S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin"
+  },
+  "VAIF1P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin"
+  },
+  "VAIF2P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Plur|Person=2|Tense=Fut|VerbForm=Fin"
+  },
+  "VAIF3P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin"
+  },
+  "VAIS1S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin"
+  },
+  "VAIS2S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Sing|Person=2|Tense=Past|VerbForm=Fin"
+  },
+  "VAIS3S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin"
+  },
+  "VAIS1P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin"
+  },
+  "VAIS2P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Plur|Person=2|Tense=Past|VerbForm=Fin"
+  },
+  "VAIS3P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin"
+  },
+  "VAII1S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin"
+  },
+  "VAII2S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Sing|Person=2|Tense=Imp|VerbForm=Fin"
+  },
+  "VAII3S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin"
+  },
+  "VAII1P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin"
+  },
+  "VAII2P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Plur|Person=2|Tense=Imp|VerbForm=Fin"
+  },
+  "VAII3P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin"
+  },
+  "VASP1S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin"
+  },
+  "VASP2S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin"
+  },
+  "VASP3S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+  },
+  "VASP1P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin"
+  },
+  "VASP2P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin"
+  },
+  "VASP3P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin"
+  },
+  "VASF1S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin"
+  },
+  "VASF2S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|Number=Sing|Person=2|Tense=Fut|VerbForm=Fin"
+  },
+  "VASF3S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin"
+  },
+  "VASF1P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin"
+  },
+  "VASF2P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|Number=Plur|Person=2|Tense=Fut|VerbForm=Fin"
+  },
+  "VASF3P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin"
+  },
+  "VASI1S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin"
+  },
+  "VASI2S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|Number=Sing|Person=2|Tense=Imp|VerbForm=Fin"
+  },
+  "VASI3S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin"
+  },
+  "VASI1P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin"
+  },
+  "VASI2P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|Number=Plur|Person=2|Tense=Imp|VerbForm=Fin"
+  },
+  "VASI3P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin"
+  },
+  "VA0C1S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Cnd|Number=Sing|Person=1"
+  },
+  "VA0C2S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Cnd|Number=Sing|Person=2"
+  },
+  "VA0C3S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Cnd|Number=Sing|Person=3"
+  },
+  "VA0C1P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Cnd|Number=Plur|Person=1"
+  },
+  "VA0C2P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Cnd|Number=Plur|Person=2"
+  },
+  "VA0C3P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Cnd|Number=Plur|Person=3"
+  },
+  "VAM02S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Imp|Number=Sing|Person=2|VerbForm=Fin"
+  },
+  "VAM03S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Imp|Number=Sing|Person=3|VerbForm=Fin"
+  },
+  "VAM01P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Imp|Number=Plur|Person=1|VerbForm=Fin"
+  },
+  "VAM02P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Imp|Number=Plur|Person=2|VerbForm=Fin"
+  },
+  "VAM03P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Imp|Number=Plur|Person=3|VerbForm=Fin"
+  },
+  "VAPS0SM": {
+    "PoS": "AUX",
+    "Tag": "Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part"
+  },
+  "VAPS0SF": {
+    "PoS": "AUX",
+    "Tag": "Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part"
+  },
+  "VAPS0PM": {
+    "PoS": "AUX",
+    "Tag": "Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part"
+  },
+  "VAPS0PF": {
+    "PoS": "AUX",
+    "Tag": "Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part"
+  },
+  "VAGP0SM": {
+    "PoS": "AUX",
+    "Tag": "Gender=Masc|Number=Sing|Tense=Pres|VerbForm=Ger"
+  },
+  "VAGP0SF": {
+    "PoS": "AUX",
+    "Tag": "Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Ger"
+  },
+  "VAGP0PM": {
+    "PoS": "AUX",
+    "Tag": "Gender=Masc|Number=Plur|Tense=Pres|VerbForm=Ger"
+  },
+  "VAGP0PF": {
+    "PoS": "AUX",
+    "Tag": "Gender=Fem|Number=Plur|Tense=Pres|VerbForm=Ger"
+  },
+  "VSN0000": {
+    "PoS": "AUX",
+    "Tag": "VerbForm=Inf"
+  },
+  "VSIP1S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin"
+  },
+  "VSIP2S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin"
+  },
+  "VSIP3S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+  },
+  "VSIP1P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin"
+  },
+  "VSIP2P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin"
+  },
+  "VSIP3P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin"
+  },
+  "VSIF1S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin"
+  },
+  "VSIF2S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Sing|Person=2|Tense=Fut|VerbForm=Fin"
+  },
+  "VSIF3S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin"
+  },
+  "VSIF1P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin"
+  },
+  "VSIF2P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Plur|Person=2|Tense=Fut|VerbForm=Fin"
+  },
+  "VSIF3P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin"
+  },
+  "VSIS1S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin"
+  },
+  "VSIS2S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Sing|Person=2|Tense=Past|VerbForm=Fin"
+  },
+  "VSIS3S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin"
+  },
+  "VSIS1P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin"
+  },
+  "VSIS2P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Plur|Person=2|Tense=Past|VerbForm=Fin"
+  },
+  "VSIS3P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin"
+  },
+  "VSII1S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin"
+  },
+  "VSII2S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Sing|Person=2|Tense=Imp|VerbForm=Fin"
+  },
+  "VSII3S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin"
+  },
+  "VSII1P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin"
+  },
+  "VSII2P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Plur|Person=2|Tense=Imp|VerbForm=Fin"
+  },
+  "VSII3P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin"
+  },
+  "VSSP1S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin"
+  },
+  "VSSP2S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin"
+  },
+  "VSSP3S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+  },
+  "VSSP1P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin"
+  },
+  "VSSP2P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin"
+  },
+  "VSSP3P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin"
+  },
+  "VSSF1S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin"
+  },
+  "VSSF2S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|Number=Sing|Person=2|Tense=Fut|VerbForm=Fin"
+  },
+  "VSSF3S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin"
+  },
+  "VSSF1P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin"
+  },
+  "VSSF2P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|Number=Plur|Person=2|Tense=Fut|VerbForm=Fin"
+  },
+  "VSSF3P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin"
+  },
+  "VSSI1S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin"
+  },
+  "VSSI2S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|Number=Sing|Person=2|Tense=Imp|VerbForm=Fin"
+  },
+  "VSSI3S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin"
+  },
+  "VSSI1P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin"
+  },
+  "VSSI2P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|Number=Plur|Person=2|Tense=Imp|VerbForm=Fin"
+  },
+  "VSSI3P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin"
+  },
+  "VS0C1S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Cnd|Number=Sing|Person=1"
+  },
+  "VS0C2S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Cnd|Number=Sing|Person=2"
+  },
+  "VS0C3S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Cnd|Number=Sing|Person=3"
+  },
+  "VS0C1P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Cnd|Number=Plur|Person=1"
+  },
+  "VS0C2P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Cnd|Number=Plur|Person=2"
+  },
+  "VS0C3P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Cnd|Number=Plur|Person=3"
+  },
+  "VSM02S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Imp|Number=Sing|Person=2|VerbForm=Fin"
+  },
+  "VSM03S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Imp|Number=Sing|Person=3|VerbForm=Fin"
+  },
+  "VSM01P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Imp|Number=Plur|Person=1|VerbForm=Fin"
+  },
+  "VSM02P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Imp|Number=Plur|Person=2|VerbForm=Fin"
+  },
+  "VSM03P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Imp|Number=Plur|Person=3|VerbForm=Fin"
+  },
+  "VSPS0SM": {
+    "PoS": "AUX",
+    "Tag": "Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part"
+  },
+  "VSPS0SF": {
+    "PoS": "AUX",
+    "Tag": "Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part"
+  },
+  "VSPS0PM": {
+    "PoS": "AUX",
+    "Tag": "Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part"
+  },
+  "VSPS0PF": {
+    "PoS": "AUX",
+    "Tag": "Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part"
+  },
+  "VSGP0SM": {
+    "PoS": "AUX",
+    "Tag": "Gender=Masc|Number=Sing|Tense=Pres|VerbForm=Ger"
+  },
+  "VSGP0SF": {
+    "PoS": "AUX",
+    "Tag": "Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Ger"
+  },
+  "VSGP0PM": {
+    "PoS": "AUX",
+    "Tag": "Gender=Masc|Number=Plur|Tense=Pres|VerbForm=Ger"
+  },
+  "VSGP0PF": {
+    "PoS": "AUX",
+    "Tag": "Gender=Fem|Number=Plur|Tense=Pres|VerbForm=Ger"
+  },
+  "RG": {
+    "PoS": "ADV",
+    "Tag": ""
+  },
+  "RN": {
+    "PoS": "ADV",
+    "Tag": "PronType=Neg"
+  },
+  "SP": {
+    "PoS": "ADP",
+    "Tag": "AdpType=Prep"
+  },
+  "CC": {
+    "PoS": "CCONJ",
+    "Tag": ""
+  },
+  "CS": {
+    "PoS": "SCONJ",
+    "Tag": ""
+  },
+  "I": {
+    "PoS": "INTJ",
+    "Tag": ""
+  },
+  "Fd": {
+    "PoS": "PUNCT",
+    "Tag": "PunctType=Colo"
+  },
+  "Fc": {
+    "PoS": "PUNCT",
+    "Tag": "PunctType=Comm"
+  },
+  "Fs": {
+    "PoS": "PUNCT",
+    "Tag": ""
+  },
+  "Faa": {
+    "PoS": "PUNCT",
+    "Tag": "PunctSide=Ini|PunctType=Excl"
+  },
+  "Fat": {
+    "PoS": "PUNCT",
+    "Tag": "PunctSide=Fin|PunctType=Excl"
+  },
+  "Fg": {
+    "PoS": "PUNCT",
+    "Tag": "PunctType=Dash"
+  },
+  "Fz": {
+    "PoS": "PUNCT",
+    "Tag": ""
+  },
+  "Ft": {
+    "PoS": "PUNCT",
+    "Tag": ""
+  },
+  "Fp": {
+    "PoS": "PUNCT",
+    "Tag": "PunctType=Peri"
+  },
+  "Fia": {
+    "PoS": "PUNCT",
+    "Tag": "PunctSide=Ini|PunctType=Qest"
+  },
+  "Fit": {
+    "PoS": "PUNCT",
+    "Tag": "PunctSide=Fin|PunctType=Qest"
+  },
+  "Fe": {
+    "PoS": "PUNCT",
+    "Tag": "PunctType=Quot"
+  },
+  "Fra": {
+    "PoS": "PUNCT",
+    "Tag": "PunctSide=Ini|PunctType=Quot"
+  },
+  "Frc": {
+    "PoS": "PUNCT",
+    "Tag": "PunctSide=Fin|PunctType=Quot"
+  },
+  "Fx": {
+    "PoS": "PUNCT",
+    "Tag": "PunctType=Semi"
+  },
+  "Fh": {
+    "PoS": "PUNCT",
+    "Tag": ""
+  },
+  "Fpa": {
+    "PoS": "PUNCT",
+    "Tag": "PunctSide=Ini|PunctType=Brck"
+  },
+  "Fpt": {
+    "PoS": "PUNCT",
+    "Tag": "PunctSide=Fin|PunctType=Brck"
+  },
+  "Fca": {
+    "PoS": "PUNCT",
+    "Tag": "PunctSide=Ini|PunctType=Brck"
+  },
+  "Fct": {
+    "PoS": "PUNCT",
+    "Tag": "PunctSide=Fin|PunctType=Brck"
+  },
+  "Fla": {
+    "PoS": "PUNCT",
+    "Tag": "PunctSide=Ini|PunctType=Brck"
+  },
+  "Flt": {
+    "PoS": "PUNCT",
+    "Tag": "PunctSide=Fin|PunctType=Brck"
+  },
+  "AQ0CP00": {
+    "PoS": "ADJ",
+    "Tag": "Number=Plur"
+  },
+  "AQ0CS00": {
+    "PoS": "ADJ",
+    "Tag": "Number=Sing"
+  },
+  "AQ0FS00": {
+    "PoS": "ADJ",
+    "Tag": "Gender=Fem|Number=Sing"
+  },
+  "AQAMS00": {
+    "PoS": "ADJ",
+    "Tag": "Gender=Masc|Number=Sing"
+  },
+  "AQSMP00": {
+    "PoS": "ADJ",
+    "Tag": "Degree=Sup|Gender=Masc|Number=Plur"
+  },
+  "AO0MS00": {
+    "PoS": "ADJ",
+    "Tag": "NumType=Ord|Gender=Masc|Number=Sing"
+  },
+  "AO0FS00": {
+    "PoS": "ADJ",
+    "Tag": "NumType=Ord|Gender=Fem|Number=Sing"
+  },
+  "AO0FP00": {
+    "PoS": "ADJ",
+    "Tag": "NumType=Ord|Gender=Fem|Number=Plur"
+  },
+  "AO0MP00": {
+    "PoS": "ADJ",
+    "Tag": "NumType=Ord|Gender=Masc|Number=Plur"
+  },
+  "AP0FS1S": {
+    "PoS": "ADJ",
+    "Tag": "Poss=Yes|Gender=Fem|Number=Sing|Person=1|Number[psor]=Sing|Poss=Yes"
+  },
+  "AP0FP1S": {
+    "PoS": "ADJ",
+    "Tag": "Poss=Yes|Gender=Fem|Number=Plur|Person=1|Number[psor]=Sing|Poss=Yes"
+  },
+  "AP0MS1S": {
+    "PoS": "ADJ",
+    "Tag": "Poss=Yes|Gender=Masc|Number=Sing|Person=1|Number[psor]=Sing|Poss=Yes"
+  },
+  "AP0MP1S": {
+    "PoS": "ADJ",
+    "Tag": "Poss=Yes|Gender=Masc|Number=Plur|Person=1|Number[psor]=Sing|Poss=Yes"
+  },
+  "AP0FS1P": {
+    "PoS": "ADJ",
+    "Tag": "Poss=Yes|Gender=Fem|Number=Sing|Person=1|Number[psor]=Plur|Poss=Yes"
+  },
+  "AP0FP1P": {
+    "PoS": "ADJ",
+    "Tag": "Poss=Yes|Gender=Fem|Number=Plur|Person=1|Number[psor]=Plur|Poss=Yes"
+  },
+  "AP0MS1P": {
+    "PoS": "ADJ",
+    "Tag": "Poss=Yes|Gender=Masc|Number=Sing|Person=1|Number[psor]=Plur|Poss=Yes"
+  },
+  "AP0MP1P": {
+    "PoS": "ADJ",
+    "Tag": "Poss=Yes|Gender=Masc|Number=Plur|Person=1|Number[psor]=Plur|Poss=Yes"
+  },
+  "AP0FS3N": {
+    "PoS": "ADJ",
+    "Tag": "Poss=Yes|Gender=Fem|Number=Sing|Person=3"
+  },
+  "AP0FP3N": {
+    "PoS": "ADJ",
+    "Tag": "Poss=Yes|Gender=Fem|Number=Plur|Person=3"
+  },
+  "AP0MS3N": {
+    "PoS": "ADJ",
+    "Tag": "Poss=Yes|Gender=Masc|Number=Sing|Person=3"
+  },
+  "AP0MP3N": {
+    "PoS": "ADJ",
+    "Tag": "Poss=Yes|Gender=Masc|Number=Plur|Person=3"
+  },
+  "AP0FS2S": {
+    "PoS": "ADJ",
+    "Tag": "Poss=Yes|Gender=Fem|Number=Sing|Person=2|Number[psor]=Sing|Poss=Yes"
+  },
+  "AP0FP2S": {
+    "PoS": "ADJ",
+    "Tag": "Poss=Yes|Gender=Fem|Number=Plur|Person=2|Number[psor]=Sing|Poss=Yes"
+  },
+  "AP0MS2S": {
+    "PoS": "ADJ",
+    "Tag": "Poss=Yes|Gender=Masc|Number=Sing|Person=2|Number[psor]=Sing|Poss=Yes"
+  },
+  "AP0MP2S": {
+    "PoS": "ADJ",
+    "Tag": "Poss=Yes|Gender=Masc|Number=Plur|Person=2|Number[psor]=Sing|Poss=Yes"
+  },
+  "AP0FS2P": {
+    "PoS": "ADJ",
+    "Tag": "Poss=Yes|Gender=Fem|Number=Sing|Person=2|Number[psor]=Plur|Poss=Yes"
+  },
+  "AP0FP2P": {
+    "PoS": "ADJ",
+    "Tag": "Poss=Yes|Gender=Fem|Number=Plur|Person=2|Number[psor]=Plur|Poss=Yes"
+  },
+  "AP0MS2P": {
+    "PoS": "ADJ",
+    "Tag": "Poss=Yes|Gender=Masc|Number=Sing|Person=2|Number[psor]=Plur|Poss=Yes"
+  },
+  "AP0MP2P": {
+    "PoS": "ADJ",
+    "Tag": "Poss=Yes|Gender=Masc|Number=Plur|Person=2|Number[psor]=Plur|Poss=Yes"
+  },
+  "NCMS000": {
+    "PoS": "NOUN",
+    "Tag": "Gender=Masc|Number=Sing"
+  },
+  "NCFP000": {
+    "PoS": "NOUN",
+    "Tag": "Gender=Fem|Number=Plur"
+  },
+  "NCMS00D": {
+    "PoS": "NOUN",
+    "Tag": "Gender=Masc|Number=Sing"
+  },
+  "NCCS000": {
+    "PoS": "NOUN",
+    "Tag": "Number=Sing"
+  },
+  "NCCP000": {
+    "PoS": "NOUN",
+    "Tag": "Number=Plur"
+  },
+  "NCMN000": {
+    "PoS": "NOUN",
+    "Tag": "Gender=Masc"
+  },
+  "NCFN000": {
+    "PoS": "NOUN",
+    "Tag": "Gender=Fem"
+  },
+  "NP00G00": {
+    "PoS": "PROPN",
+    "Tag": "NameType=Geo"
+  },
+  "NP00O00": {
+    "PoS": "PROPN",
+    "Tag": "NameType=Com"
+  },
+  "NP00SP0": {
+    "PoS": "PROPN",
+    "Tag": "NameType=Prs"
+  },
+  "VMP00SF": {
+    "PoS": "VERB",
+    "Tag": "VerbForm=Part|Number=Sing|Gender=Fem"
+  },
+  "VMP00PF": {
+    "PoS": "VERB",
+    "Tag": "VerbForm=Part|Number=Plur|Gender=Fem"
+  },
+  "VMP00SM": {
+    "PoS": "VERB",
+    "Tag": "VerbForm=Part|Number=Sing|Gender=Masc"
+  },
+  "VMP00PM": {
+    "PoS": "VERB",
+    "Tag": "VerbForm=Part|Number=Plur|Gender=Masc"
+  },
+  "VMIP1S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Pres|Person=1|Number=Sing"
+  },
+  "VSIP1S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Pres|Person=1|Number=Sing"
+  },
+  "VMIP2S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Pres|Person=2|Number=Sing"
+  },
+  "VSIP2S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Pres|Person=2|Number=Sing"
+  },
+  "VMIP3S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Pres|Person=3|Number=Sing"
+  },
+  "VSIP3S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Pres|Person=3|Number=Sing"
+  },
+  "VMIP1P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Pres|Person=1|Number=Plur"
+  },
+  "VSIP1P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Pres|Person=1|Number=Plur"
+  },
+  "VMIP2P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Pres|Person=2|Number=Plur"
+  },
+  "VSIP2P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Pres|Person=2|Number=Plur"
+  },
+  "VMIP3P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Pres|Person=3|Number=Plur"
+  },
+  "VSIP3P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Pres|Person=3|Number=Plur"
+  },
+  "VMII1S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Imp|Person=1|Number=Sing"
+  },
+  "VSII1S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Imp|Person=1|Number=Sing"
+  },
+  "VMII2S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Imp|Person=2|Number=Sing"
+  },
+  "VSII2S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Imp|Person=2|Number=Sing"
+  },
+  "VMII3S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Imp|Person=3|Number=Sing"
+  },
+  "VSII3S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Imp|Person=3|Number=Sing"
+  },
+  "VMII1P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Imp|Person=1|Number=Plur"
+  },
+  "VSII1P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Imp|Person=1|Number=Plur"
+  },
+  "VMII2P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Imp|Person=2|Number=Plur"
+  },
+  "VSII2P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Imp|Person=2|Number=Plur"
+  },
+  "VMII3P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Imp|Person=3|Number=Plur"
+  },
+  "VSII3P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Imp|Person=3|Number=Plur"
+  },
+  "VMIS1S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Past|Person=1|Number=Sing"
+  },
+  "VSIS1S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Past|Person=1|Number=Sing"
+  },
+  "VMIS2S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Past|Person=2|Number=Sing"
+  },
+  "VSIS2S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Past|Person=2|Number=Sing"
+  },
+  "VMIS3S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Past|Person=3|Number=Sing"
+  },
+  "VSIS3S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Past|Person=3|Number=Sing"
+  },
+  "VMIS1P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Past|Person=1|Number=Plur"
+  },
+  "VSIS1P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Past|Person=1|Number=Plur"
+  },
+  "VMIS2P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Past|Person=2|Number=Plur"
+  },
+  "VSIS2P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Past|Person=2|Number=Plur"
+  },
+  "VMIS3P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Past|Person=3|Number=Plur"
+  },
+  "VSIS3P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Past|Person=3|Number=Plur"
+  },
+  "VMIF1S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Fut|Person=1|Number=Sing"
+  },
+  "VSIF1S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Fut|Person=1|Number=Sing"
+  },
+  "VMIF2S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Fut|Person=2|Number=Sing"
+  },
+  "VSIF2S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Fut|Person=2|Number=Sing"
+  },
+  "VMIF3S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Fut|Person=3|Number=Sing"
+  },
+  "VSIF3S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Fut|Person=3|Number=Sing"
+  },
+  "VMIF1P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Fut|Person=1|Number=Plur"
+  },
+  "VSIF1P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Fut|Person=1|Number=Plur"
+  },
+  "VMIF2P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Fut|Person=2|Number=Plur"
+  },
+  "VSIF2P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Fut|Person=2|Number=Plur"
+  },
+  "VMIF3P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Fut|Person=3|Number=Plur"
+  },
+  "VSIF3P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|VerbForm=Fin|Tense=Fut|Person=3|Number=Plur"
+  },
+  "VMIC1S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|VerbForm=Fin|Mood=Cnd|Person=1|Number=Sing"
+  },
+  "VSIC1S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|VerbForm=Fin|Mood=Cnd|Person=1|Number=Sing"
+  },
+  "VMIC2S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|VerbForm=Fin|Mood=Cnd|Person=2|Number=Sing"
+  },
+  "VSIC2S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|VerbForm=Fin|Mood=Cnd|Person=2|Number=Sing"
+  },
+  "VMIC3S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|VerbForm=Fin|Mood=Cnd|Person=3|Number=Sing"
+  },
+  "VSIC3S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|VerbForm=Fin|Mood=Cnd|Person=3|Number=Sing"
+  },
+  "VMIC1P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|VerbForm=Fin|Mood=Cnd|Person=1|Number=Plur"
+  },
+  "VSIC1P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|VerbForm=Fin|Mood=Cnd|Person=1|Number=Plur"
+  },
+  "VMIC2P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|VerbForm=Fin|Mood=Cnd|Person=2|Number=Plur"
+  },
+  "VSIC2P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|VerbForm=Fin|Mood=Cnd|Person=2|Number=Plur"
+  },
+  "VMIC3P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Ind|VerbForm=Fin|Mood=Cnd|Person=3|Number=Plur"
+  },
+  "VSIC3P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Ind|VerbForm=Fin|Mood=Cnd|Person=3|Number=Plur"
+  },
+  "VMSP1S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Sub|VerbForm=Fin|Tense=Pres|Person=1|Number=Sing"
+  },
+  "VSSP1S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|VerbForm=Fin|Tense=Pres|Person=1|Number=Sing"
+  },
+  "VMSP2S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Sub|VerbForm=Fin|Tense=Pres|Person=2|Number=Sing"
+  },
+  "VSSP2S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|VerbForm=Fin|Tense=Pres|Person=2|Number=Sing"
+  },
+  "VMSP3S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Sub|VerbForm=Fin|Tense=Pres|Person=3|Number=Sing"
+  },
+  "VSSP3S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|VerbForm=Fin|Tense=Pres|Person=3|Number=Sing"
+  },
+  "VMSP1P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Sub|VerbForm=Fin|Tense=Pres|Person=1|Number=Plur"
+  },
+  "VSSP1P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|VerbForm=Fin|Tense=Pres|Person=1|Number=Plur"
+  },
+  "VMSP2P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Sub|VerbForm=Fin|Tense=Pres|Person=2|Number=Plur"
+  },
+  "VSSP2P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|VerbForm=Fin|Tense=Pres|Person=2|Number=Plur"
+  },
+  "VMSP3P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Sub|VerbForm=Fin|Tense=Pres|Person=3|Number=Plur"
+  },
+  "VSSP3P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|VerbForm=Fin|Tense=Pres|Person=3|Number=Plur"
+  },
+  "VMSI1S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Sub|VerbForm=Fin|Tense=Imp|Person=1|Number=Sing"
+  },
+  "VSSI1S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|VerbForm=Fin|Tense=Imp|Person=1|Number=Sing"
+  },
+  "VMSI2S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Sub|VerbForm=Fin|Tense=Imp|Person=2|Number=Sing"
+  },
+  "VSSI2S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|VerbForm=Fin|Tense=Imp|Person=2|Number=Sing"
+  },
+  "VMSI3S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Sub|VerbForm=Fin|Tense=Imp|Person=3|Number=Sing"
+  },
+  "VSSI3S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|VerbForm=Fin|Tense=Imp|Person=3|Number=Sing"
+  },
+  "VMSI1P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Sub|VerbForm=Fin|Tense=Imp|Person=1|Number=Plur"
+  },
+  "VSSI1P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|VerbForm=Fin|Tense=Imp|Person=1|Number=Plur"
+  },
+  "VMSI2P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Sub|VerbForm=Fin|Tense=Imp|Person=2|Number=Plur"
+  },
+  "VSSI2P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|VerbForm=Fin|Tense=Imp|Person=2|Number=Plur"
+  },
+  "VMSI3P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Sub|VerbForm=Fin|Tense=Imp|Person=3|Number=Plur"
+  },
+  "VSSI3P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|VerbForm=Fin|Tense=Imp|Person=3|Number=Plur"
+  },
+  "VMSF1S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Sub|VerbForm=Fin|Tense=Fut|Person=1|Number=Sing"
+  },
+  "VSSF1S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|VerbForm=Fin|Tense=Fut|Person=1|Number=Sing"
+  },
+  "VMSF2S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Sub|VerbForm=Fin|Tense=Fut|Person=2|Number=Sing"
+  },
+  "VSSF2S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|VerbForm=Fin|Tense=Fut|Person=2|Number=Sing"
+  },
+  "VMSF3S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Sub|VerbForm=Fin|Tense=Fut|Person=3|Number=Sing"
+  },
+  "VSSF3S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|VerbForm=Fin|Tense=Fut|Person=3|Number=Sing"
+  },
+  "VMSF1P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Sub|VerbForm=Fin|Tense=Fut|Person=1|Number=Plur"
+  },
+  "VSSF1P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|VerbForm=Fin|Tense=Fut|Person=1|Number=Plur"
+  },
+  "VMSF2P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Sub|VerbForm=Fin|Tense=Fut|Person=2|Number=Plur"
+  },
+  "VSSF2P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|VerbForm=Fin|Tense=Fut|Person=2|Number=Plur"
+  },
+  "VMSF3P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Sub|VerbForm=Fin|Tense=Fut|Person=3|Number=Plur"
+  },
+  "VSSF3P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Sub|VerbForm=Fin|Tense=Fut|Person=3|Number=Plur"
+  },
+  "VMG0000": {
+    "PoS": "VERB",
+    "Tag": "VerbForm=Ger"
+  },
+  "VSG0000": {
+    "PoS": "AUX",
+    "Tag": "VerbForm=Ger"
+  },
+  "VMM02S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Imp|VerbForm=Fin|Person=2|Number=Sing"
+  },
+  "VSM02S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Imp|VerbForm=Fin|Person=2|Number=Sing"
+  },
+  "VMM03S0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Imp|VerbForm=Fin|Person=3|Number=Sing"
+  },
+  "VSM03S0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Imp|VerbForm=Fin|Person=3|Number=Sing"
+  },
+  "VMM01P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Imp|VerbForm=Fin|Person=1|Number=Plur"
+  },
+  "VSM01P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Imp|VerbForm=Fin|Person=1|Number=Plur"
+  },
+  "VMM02P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Imp|VerbForm=Fin|Person=2|Number=Plur"
+  },
+  "VSM02P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Imp|VerbForm=Fin|Person=2|Number=Plur"
+  },
+  "VMM03P0": {
+    "PoS": "VERB",
+    "Tag": "Mood=Imp|VerbForm=Fin|Person=3|Number=Plur"
+  },
+  "VSM03P0": {
+    "PoS": "AUX",
+    "Tag": "Mood=Imp|VerbForm=Fin|Person=3|Number=Plur"
+  },
+  "VMN0000": {
+    "PoS": "VERB",
+    "Tag": "VerbForm=Inf"
+  },
+  "VSN0000": {
+    "PoS": "AUX",
+    "Tag": "VerbForm=Inf"
+  },
+  "VSP00SM": {
+    "PoS": "AUX",
+    "Tag": "VerbForm=Part|Number=Sing|Gender=Masc"
+  },
+  "PP1CSN0": {
+    "PoS": "PRON",
+    "Tag": "PronType=Prs|Person=1|Number=Sing|Case=Nom"
+  },
+  "PP1CS00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Prs|Person=1|Number=Sing"
+  },
+  "PP1CSO0": {
+    "PoS": "PRON",
+    "Tag": "PronType=Prs|Person=1|Number=Sing|PrepCase=Pre"
+  },
+  "PP1CP00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Prs|Person=1|Number=Plur"
+  },
+  "PP1FP00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Prs|Person=1|Gender=Fem|Number=Plur"
+  },
+  "PP1MP00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Prs|Person=1|Gender=Masc|Number=Plur"
+  },
+  "PP2CS00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Prs|Person=2|Number=Sing"
+  },
+  "PP2CSO0": {
+    "PoS": "PRON",
+    "Tag": "PronType=Prs|Person=2|Number=Sing|PrepCase=Pre"
+  },
+  "PP2CSN0": {
+    "PoS": "PRON",
+    "Tag": "PronType=Prs|Person=2|Number=Sing|Case=Nom"
+  },
+  "PP2CP00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Prs|Person=2|Number=Plur"
+  },
+  "PP2CS0P": {
+    "PoS": "PRON",
+    "Tag": "PronType=Prs|Person=2|Number=Sing|Polite=Form"
+  },
+  "PP2CP0P": {
+    "PoS": "PRON",
+    "Tag": "PronType=Prs|Person=2|Number=Plur|Polite=Form"
+  },
+  "PP3CN0P": {
+    "PoS": "PRON",
+    "Tag": "PronType=Prs|Person=3|Polite=Form"
+  },
+  "PP2FP00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Prs|Person=2|Gender=Fem|Number=Plur"
+  },
+  "PP2MP00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Prs|Person=2|Gender=Masc|Number=Plur"
+  },
+  "PP2CNO0": {
+    "PoS": "PRON",
+    "Tag": "PronType=Prs|Person=2|PrepCase=Pre"
+  },
+  "PP3MS00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Prs|Person=3|Gender=Masc|Number=Sing"
+  },
+  "PP3FS00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Prs|Person=3|Gender=Fem|Number=Sing"
+  },
+  "PP3FP00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Prs|Person=3|Gender=Fem|Number=Plur"
+  },
+  "PP30S00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Prs|Person=3|Number=Sing"
+  },
+  "PP3MP00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Prs|Person=3|Gender=Masc|Number=Plur"
+  },
+  "PP3FSA0": {
+    "PoS": "PRON",
+    "Tag": "PronType=Prs|Person=3|Gender=Fem|Number=Sing|Case=Acc"
+  },
+  "PP3FPA0": {
+    "PoS": "PRON",
+    "Tag": "PronType=Prs|Person=3|Gender=Fem|Number=Plur|Case=Acc"
+  },
+  "PP3MSA0": {
+    "PoS": "PRON",
+    "Tag": "PronType=Prs|Person=3|Gender=Masc|Number=Sing|Case=Acc"
+  },
+  "PP3MPA0": {
+    "PoS": "PRON",
+    "Tag": "PronType=Prs|Person=3|Gender=Masc|Number=Plur|Case=Acc"
+  },
+  "PP3CSD0": {
+    "PoS": "PRON",
+    "Tag": "PronType=Prs|Person=3|Number=Sing|Case=Dat"
+  },
+  "PP3CPD0": {
+    "PoS": "PRON",
+    "Tag": "PronType=Prs|Person=3|Number=Plur|Case=Dat"
+  },
+  "PP3CN00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Prs|Person=3"
+  },
+  "PP3CNO0": {
+    "PoS": "PRON",
+    "Tag": "PronType=Prs|Person=3|PrepCase=Pre"
+  },
+  "PD0FP00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Dem|Gender=Fem|Number=Plur"
+  },
+  "PD0FS00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Dem|Gender=Fem|Number=Sing"
+  },
+  "PD0MP00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Dem|Gender=Masc|Number=Plur"
+  },
+  "PD0MS00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Dem|Gender=Masc|Number=Sing"
+  },
+  "PD00S00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Dem|Number=Sing"
+  },
+  "PD0CS00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Dem|Number=Sing"
+  },
+  "PD0CP00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Dem|Number=Plur"
+  },
+  "PI0CS00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Ind|Definite=Ind|Number=Sing"
+  },
+  "PI0FS00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Ind|Definite=Ind|Gender=Fem|Number=Sing"
+  },
+  "PI0FP00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Ind|Definite=Ind|Gender=Fem|Number=Plur"
+  },
+  "PI0MS00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Ind|Definite=Ind|Gender=Masc|Number=Sing"
+  },
+  "PI0MP00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Ind|Definite=Ind|Gender=Masc|Number=Plur"
+  },
+  "PI0CP00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Ind|Definite=Ind|Number=Plur"
+  },
+  "PT00000": {
+    "PoS": "PRON",
+    "Tag": "PronType=Int"
+  },
+  "PT0CS00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Int|Number=Sing"
+  },
+  "PT0CP00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Int|Number=Plur"
+  },
+  "PT0FS00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Int|Gender=Fem|Number=Sing"
+  },
+  "PT0FP00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Int|Gender=Fem|Number=Plur"
+  },
+  "PT0MS00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Int|Gender=Masc|Number=Sing"
+  },
+  "PT0MP00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Int|Gender=Masc|Number=Plur"
+  },
+  "PR00000": {
+    "PoS": "PRON",
+    "Tag": "PronType=Rel"
+  },
+  "PR0CS00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Rel|Number=Sing"
+  },
+  "PR0CP00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Rel|Number=Plur"
+  },
+  "PR0FS00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Rel|Gender=Fem|Number=Sing"
+  },
+  "PR0FP00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Rel|Gender=Fem|Number=Plur"
+  },
+  "PR0MS00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Rel|Gender=Masc|Number=Sing"
+  },
+  "PR0MP00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Rel|Gender=Masc|Number=Plur"
+  },
+  "PR0CN00": {
+    "PoS": "PRON",
+    "Tag": "PronType=Rel"
+  },
+  "PE00000": {
+    "PoS": "PRON",
+    "Tag": "PronType=Exc"
+  }
+}
