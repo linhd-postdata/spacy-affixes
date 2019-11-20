@@ -5,7 +5,7 @@ import sys
 import unicodedata
 from collections import defaultdict
 from urllib.request import urlopen
-from .eagles import EAGLES_TO_UD_DICT
+from .eagles import eagles2ud
 
 AFFIXES_SUFFIX = "suffix"
 AFFIXES_PREFIX = "prefix"
@@ -142,28 +142,16 @@ def eagle2tag(eagle):
     :param eagle: EAGLES tag to be converted
     :return: Equivalent UD tag
     """
-    return EAGLES_TO_UD_DICT.get(eagle, "X")
+    tag = eagles2ud(eagle)
+    return tag if tag != '' else 'X__'
 
 
 def eagle2pos(eagle):
-    mapper = {
-        "A": "ADJ",
-        "R": "ADV",
-        "D": "DET",
-        "N": "NOUN",
-        "V": "VERB",
-        "P": "PRON",
-        "C": "CONJ",
-        "I": "INTJ",
-        "S": "ADP",
-        "F": "PUNCT",
-        "Z": "NUM",
-        "W": "NUM",  # Dates (W) are not standard EAGLE
-    }
-    return mapper.get(eagle[0], "X")
+    pos = eagles2ud(eagle).split('__')[0]
+    return pos
 
 
-def token_transform(string, kind, add, strip_accent):
+def token_transform(string, add, strip_accent):
     if add == AFFIXES_PREFIX:
         prefix, suffix = add, ""
     else:
@@ -204,7 +192,7 @@ def download_lexicon(lang="es", version="4.1"):
                 'lemma': lemma,
                 'eagle': eagle,
                 'ud': ud or eagle2pos(eagle),
-                'tags': eagle2tag(eagle),
+                'tags': eagle2tag(eagle).split("__")[1],
             })
     return lexicon
 
@@ -217,7 +205,7 @@ def build_lexicon(lexicon_raw):
             'lemma': lemma,
             'eagle': eagle,
             'ud': eagle2pos(eagle),
-            'tags': eagle2tag(eagle),
+            'tags': eagle2tag(eagle).split("__")[1],
         })
     return lexicon
 
@@ -248,7 +236,7 @@ def get_morfo(string, lexicon, regex, assign_pos, assign_lemma,
                     return (
                         assign_pos,
                         eagle2pos(assign_pos),
-                        eagle2tag(assign_pos),
+                        eagle2tag(assign_pos).split('__')[1],
                         lemma
                     )
                 else:
