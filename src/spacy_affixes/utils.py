@@ -5,7 +5,7 @@ import sys
 import unicodedata
 from collections import defaultdict
 from urllib.request import urlopen
-from .eagles import EAGLES_TO_UD_DICT
+from .eagles import eagles2ud
 
 AFFIXES_SUFFIX = "suffix"
 AFFIXES_PREFIX = "prefix"
@@ -105,9 +105,12 @@ def build_affixes(affixes_raw):
         for affix in affixes:
             if len(affix.strip()) > 0 and not affix.startswith("#"):
                 affix_split = re.split(r"\s+", affix)
-                key, add, pos_re, _, strip_accent, *_, tokens = affix_split
+                (key, add, pos_re, assign_pos, strip_accent,
+                 *_, assign_lemma, always_apply, tokens) = affix_split
                 add = add if add != "*" else ""
+                assign_pos = assign_pos if assign_pos != "*" else ""
                 strip_accent = int(strip_accent) == 0
+                always_apply = int(always_apply) == 1
                 if tokens == "-":
                     text = [key]
                 else:
@@ -116,7 +119,10 @@ def build_affixes(affixes_raw):
                     "pattern": affix_pos_re.format(key),
                     "kind": affix_kind,
                     "pos_re": fr"{pos_re}",
+                    "assign_pos": assign_pos,
                     "strip_accent": strip_accent,
+                    "assign_lemma": assign_lemma,
+                    "always_apply": always_apply,
                     "affix_add": add.split("|"),
                     "affix_text": text,
                 }
@@ -136,28 +142,16 @@ def eagle2tag(eagle):
     :param eagle: EAGLES tag to be converted
     :return: Equivalent UD tag
     """
-    return EAGLES_TO_UD_DICT.get(eagle, "X")
+    tag = eagles2ud(eagle)
+    return tag if tag != '' else 'X__'
 
 
 def eagle2pos(eagle):
-    mapper = {
-        "A": "ADJ",
-        "R": "ADV",
-        "D": "DET",
-        "N": "NOUN",
-        "V": "VERB",
-        "P": "PRON",
-        "C": "CONJ",
-        "I": "INTJ",
-        "S": "ADP",
-        "F": "PUNCT",
-        "Z": "NUM",
-        "W": "NUM",  # Dates (W) are not standard EAGLE
-    }
-    return mapper.get(eagle[0], "X")
+    pos = eagles2ud(eagle).split('__')[0]
+    return pos
 
 
-def token_transform(string, kind, add, strip_accent):
+def token_transform(string, add, strip_accent):
     if add == AFFIXES_PREFIX:
         prefix, suffix = add, ""
     else:
@@ -198,7 +192,7 @@ def download_lexicon(lang="es", version="4.1"):
                 'lemma': lemma,
                 'eagle': eagle,
                 'ud': ud or eagle2pos(eagle),
-                'tags': eagle2tag(eagle),
+                'tags': eagle2tag(eagle).split("__")[1],
             })
     return lexicon
 
@@ -211,22 +205,45 @@ def build_lexicon(lexicon_raw):
             'lemma': lemma,
             'eagle': eagle,
             'ud': eagle2pos(eagle),
-            'tags': eagle2tag(eagle),
+            'tags': eagle2tag(eagle).split("__")[1],
         })
     return lexicon
 
 
-def get_morfo(string, lexicon, regex):
+def get_assigned_lemma(rule, **opts):
+    ralf = {
+        "R": opts["token_left"],
+        "A": opts["affix_text"],
+        "L": opts["lemma"],
+        "F": opts["token_lower"],
+    }
+    return "".join([ralf.get(opt, opt) for opt in rule.split("+")])
+
+
+def get_morfo(string, lexicon, regex, assign_pos, assign_lemma,
+              **assign_lemma_opts):
     # Checks for string in the lexicon
     # Returns EAGLE, UD, tags, lemma
     if string in lexicon:
         entry = lexicon[string]
         for definition in entry:
             if regex.match(definition["eagle"]):
-                return (
-                    definition["eagle"],
-                    definition["ud"],
-                    definition["tags"],
-                    definition["lemma"]
-                )
+                assign_lemma_opts.update({
+                    "lemma": definition["lemma"]
+                })
+                lemma = get_assigned_lemma(assign_lemma, **assign_lemma_opts)
+                if assign_pos:
+                    return (
+                        assign_pos,
+                        eagle2pos(assign_pos),
+                        eagle2tag(assign_pos).split('__')[1],
+                        lemma
+                    )
+                else:
+                    return (
+                        definition["eagle"],
+                        definition["ud"],
+                        definition["tags"],
+                        lemma
+                    )
     return None

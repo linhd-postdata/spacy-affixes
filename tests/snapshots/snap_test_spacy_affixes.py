@@ -12,7 +12,7 @@ snapshots['test_split_on_all 1'] = [
         'Cuénta',
         'contar',
         'VERB',
-        'VERB__Mood=Imp|Number=Sing|Person=2|VerbForm=Fin',
+        'Mood=Imp|Number=Sing|Person=2|VerbForm=Fin',
         True,
         'suffix_melo',
         'suffix',
@@ -47,7 +47,7 @@ snapshots['test_split_on_all 1'] = [
         'ADV',
         'ADV___',
         False,
-        'prefix_bien',
+        None,
         None,
         None,
         0
@@ -67,7 +67,7 @@ snapshots['test_split_on_all 1'] = [
         'di',
         'decir',
         'VERB',
-        'VERB__Mood=Imp|Number=Sing|Person=2|VerbForm=Fin',
+        'Mood=Imp|Number=Sing|Person=2|VerbForm=Fin',
         True,
         'suffix_lo',
         'suffix',
@@ -78,7 +78,7 @@ snapshots['test_split_on_all 1'] = [
         'lo',
         'el',
         'DET',
-        'DET__Gender=Masc|Number=Sing|PronType=Art',
+        'DET__Definite=Def|Number=Sing|PronType=Art',
         False,
         None,
         None,
@@ -124,7 +124,7 @@ snapshots['test_split_on_all 1'] = [
         'PRON',
         'PRON__Number=Sing|Person=1|PronType=Prs',
         False,
-        'suffix_me',
+        None,
         None,
         None,
         0
@@ -132,10 +132,10 @@ snapshots['test_split_on_all 1'] = [
     [
         'des',
         'dar',
-        'VERB',
-        'VERB__Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin',
+        'ADP',
+        'ADP__AdpType=Prep',
         False,
-        'prefix_des',
+        None,
         None,
         None,
         0
@@ -157,7 +157,7 @@ snapshots['test_split_on_all 1'] = [
         'NOUN',
         'NOUN__Gender=Masc|Number=Sing',
         False,
-        'suffix_melo',
+        None,
         None,
         None,
         0
@@ -190,8 +190,8 @@ snapshots['test_split_on_all 2'] = [
     [
         'misma',
         'mismo',
-        'ADJ',
-        'X',
+        'ADV',
+        'DET__Gender=Fem|Number=Sing|PronType=Ind',
         True,
         'suffix_mente',
         'suffix',
@@ -224,7 +224,7 @@ snapshots['test_split_on_all 2'] = [
         'hacér',
         'hacer',
         'VERB',
-        'VERB__VerbForm=Inf',
+        'VerbForm=Inf',
         True,
         'suffix_selo',
         'suffix',
@@ -233,9 +233,9 @@ snapshots['test_split_on_all 2'] = [
     ],
     [
         'se',
-        'despacio',
+        'se',
         'ADV',
-        'ADV___',
+        'PRON__Person=3|PronType=Prs',
         False,
         None,
         None,
@@ -257,7 +257,7 @@ snapshots['test_split_on_all 2'] = [
         'despac',
         'despacio',
         'ADV',
-        'ADV___',
+        'VERB__Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin',
         True,
         'suffix_ito',
         'suffix',
@@ -267,8 +267,8 @@ snapshots['test_split_on_all 2'] = [
     [
         'ito',
         'ito',
-        'ADJ',
-        'ADJ__Number=Sing',
+        'PROPN',
+        'PROPN___',
         False,
         None,
         None,
@@ -302,9 +302,9 @@ snapshots['test_split_on_all 3'] = [
     ],
     [
         'hispano',
-        'hispano',
+        'hispanoamericano',
         'ADJ',
-        'X',
+        'Gender=Masc|Number=Sing',
         True,
         'prefix_hispano',
         'prefix',
@@ -339,7 +339,7 @@ snapshots['test_split_on_all 3'] = [
         'ADJ',
         'ADJ__Gender=Masc|Number=Sing',
         False,
-        'prefix_antirr',
+        None,
         None,
         None,
         0
@@ -362,7 +362,7 @@ snapshots['test_split_on_all 4'] = [
         'Di',
         'decir',
         'VERB',
-        'VERB__Mood=Imp|Number=Sing|Person=2|VerbForm=Fin',
+        'Mood=Imp|Number=Sing|Person=2|VerbForm=Fin',
         True,
         'suffix_me',
         'suffix',
@@ -373,7 +373,7 @@ snapshots['test_split_on_all 4'] = [
         'me',
         'me',
         'PRON',
-        'PRON__Number=Sing|Person=1',
+        'PRON__Number=Sing|Person=1|PronType=Prs',
         False,
         None,
         None,
@@ -464,7 +464,7 @@ snapshots['test_split_on_all 5'] = [
         'hacér',
         'hacer',
         'VERB',
-        'VERB__VerbForm=Inf',
+        'VerbForm=Inf',
         True,
         'suffix_selo',
         'suffix',
@@ -499,7 +499,7 @@ snapshots['test_split_on_all 5'] = [
         'PRON',
         'PRON__Gender=Masc|Number=Sing|PronType=Ind',
         False,
-        'prefix_todo',
+        None,
         None,
         None,
         0
@@ -514,5 +514,473 @@ snapshots['test_split_on_all 5'] = [
         None,
         None,
         0
+    ]
+]
+
+snapshots['test_split_on_verbs 1'] = [
+    [
+        'Cuénta',
+        'contar',
+        True,
+        'suffix_melo',
+        'suffix',
+        'Cuenta',
+        2
+    ],
+    [
+        'me',
+        'me',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        'lo',
+        'el',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        'bien',
+        'bien',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        'y',
+        'y',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        'di',
+        'decir',
+        True,
+        'suffix_lo',
+        'suffix',
+        'di',
+        1
+    ],
+    [
+        'lo',
+        'el',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        'claro',
+        'claro',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        ',',
+        ',',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        'no',
+        'no',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        'me',
+        'me',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        'des',
+        'dar',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        'un',
+        'uno',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        'caramelo',
+        'caramelo',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        '.',
+        '.',
+        False,
+        None,
+        None,
+        None,
+        0
+    ]
+]
+
+snapshots['test_split_on_verbs 2'] = [
+    [
+        'Yo',
+        'Yo',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        'mismamente',
+        'mismo',
+        True,
+        'suffix_mente',
+        'suffix',
+        'misma',
+        1
+    ],
+    [
+        'podría',
+        'poder',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        'hacér',
+        'hacer',
+        True,
+        'suffix_selo',
+        'suffix',
+        'hacer',
+        2
+    ],
+    [
+        'se',
+        'se',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        'lo',
+        'el',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        'despacito',
+        'despacio',
+        True,
+        'suffix_ito',
+        'suffix',
+        'despacio',
+        1
+    ],
+    [
+        '.',
+        '.',
+        False,
+        None,
+        None,
+        None,
+        0
+    ]
+]
+
+snapshots['test_split_on_verbs 3'] = [
+    [
+        'Soy',
+        'Soy',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        'hispanoamericano',
+        'hispanoamericano',
+        True,
+        'prefix_hispano',
+        'prefix',
+        'americano',
+        1
+    ],
+    [
+        'y',
+        'y',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        'antirrevolucionario',
+        'antirrevolucionario',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        '.',
+        '.',
+        False,
+        None,
+        None,
+        None,
+        0
+    ]
+]
+
+snapshots['test_split_on_verbs 4'] = [
+    [
+        'Di',
+        'decir',
+        True,
+        'suffix_me',
+        'suffix',
+        'Di',
+        1
+    ],
+    [
+        'me',
+        'me',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        'el',
+        'el',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        'número',
+        'número',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        'de',
+        'de',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        'teléfono',
+        'teléfono',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        '.',
+        '.',
+        False,
+        None,
+        None,
+        None,
+        0
+    ]
+]
+
+snapshots['test_split_on_verbs 5'] = [
+    [
+        'Hay',
+        'Hay',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        'que',
+        'que',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        'hacér',
+        'hacer',
+        True,
+        'suffix_selo',
+        'suffix',
+        'hacer',
+        2
+    ],
+    [
+        'se',
+        'se',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        'lo',
+        'el',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        'todo',
+        'todo',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        '.',
+        '.',
+        False,
+        None,
+        None,
+        None,
+        0
+    ]
+]
+
+snapshots['test_accent_exceptions 1'] = [
+    [
+        'Ese',
+        'Ese',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        'hombre',
+        'hombre',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        'está',
+        'estar',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        'demente',
+        'demente',
+        False,
+        None,
+        None,
+        None,
+        0
+    ]
+]
+
+snapshots['test_accent_exceptions 2'] = [
+    [
+        'automáticamente',
+        'automático',
+        True,
+        'suffix_mente',
+        'suffix',
+        'automática',
+        1
+    ]
+]
+
+snapshots['test_accent_exceptions 3'] = [
+    [
+        'mágicamente',
+        'mágicamente',
+        False,
+        None,
+        None,
+        None,
+        0
+    ]
+]
+
+snapshots['test_accent_exceptions 4'] = [
+    [
+        'antirrevolucionariamente',
+        'antirrevolucionario',
+        True,
+        'suffix_mente',
+        'suffix',
+        'antirrevolucionaria',
+        1
     ]
 ]
