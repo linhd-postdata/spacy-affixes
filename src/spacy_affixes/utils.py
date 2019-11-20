@@ -87,7 +87,7 @@ def load_lexicon(lang="es", version="4.1"):
 def download_affixes(lang="es", version="4.1"):
     sys.stdout.write(f"Downloading affixes {lang}-{version}...\n")
     url = (f"https://raw.githubusercontent.com/TALP-UPC/FreeLing/"
-           f"v{version}/data/{lang}/afixos.dat")
+           f"{version}/data/{lang}/afixos.dat")
     affixes_raw = urlopen(url).read().decode('utf-8')
     return build_affixes(affixes_raw)
 
@@ -142,8 +142,8 @@ def eagle2tag(eagle):
     :param eagle: EAGLES tag to be converted
     :return: Equivalent UD tag
     """
-    tag = eagles2ud(eagle).split('__')[1]
-    return tag if tag != '' else 'X'
+    tag = eagles2ud(eagle)
+    return tag if tag != '' else 'X__'
 
 
 def eagle2pos(eagle):
@@ -192,7 +192,7 @@ def download_lexicon(lang="es", version="4.1"):
                 'lemma': lemma,
                 'eagle': eagle,
                 'ud': ud or eagle2pos(eagle),
-                'tags': eagle2tag(eagle),
+                'tags': eagle2tag(eagle).split("__")[1],
             })
     return lexicon
 
@@ -205,7 +205,7 @@ def build_lexicon(lexicon_raw):
             'lemma': lemma,
             'eagle': eagle,
             'ud': eagle2pos(eagle),
-            'tags': eagle2tag(eagle),
+            'tags': eagle2tag(eagle).split("__")[1],
         })
     return lexicon
 
@@ -226,20 +226,17 @@ def get_morfo(string, lexicon, regex, assign_pos, assign_lemma,
     # Returns EAGLE, UD, tags, lemma
     if string in lexicon:
         entry = lexicon[string]
-        print(regex, entry)
         for definition in entry:
             if regex.match(definition["eagle"]):
                 assign_lemma_opts.update({
                     "lemma": definition["lemma"]
                 })
-                print(definition["lemma"])
                 lemma = get_assigned_lemma(assign_lemma, **assign_lemma_opts)
-                print(f" el lema de get_morfo es {lemma}")
                 if assign_pos:
                     return (
                         assign_pos,
                         eagle2pos(assign_pos),
-                        eagle2tag(assign_pos),
+                        eagle2tag(assign_pos).split('__')[1],
                         lemma
                     )
                 else:

@@ -7,51 +7,12 @@ from snapshottest import Snapshot
 
 snapshots = Snapshot()
 
-snapshots['test_accent_exceptions 1'] = [
-    [
-        'Ese',
-        'Ese',
-        False,
-        None,
-        None,
-        None,
-        0
-    ],
-    [
-        'hombre',
-        'hombre',
-        False,
-        None,
-        None,
-        None,
-        0
-    ],
-    [
-        'está',
-        'estar',
-        False,
-        None,
-        None,
-        None,
-        0
-    ],
-    [
-        'demente',
-        'demente',
-        False,
-        None,
-        None,
-        None,
-        0
-    ]
-]
-
 snapshots['test_split_on_all 1'] = [
     [
         'Cuénta',
         'contar',
         'VERB',
-        'Mood=Imp|VerbForm=Fin|Person=2|Number=Sing',
+        'Mood=Imp|Number=Sing|Person=2|VerbForm=Fin',
         True,
         'suffix_melo',
         'suffix',
@@ -106,7 +67,7 @@ snapshots['test_split_on_all 1'] = [
         'di',
         'decir',
         'VERB',
-        'Mood=Imp|VerbForm=Fin|Person=2|Number=Sing',
+        'Mood=Imp|Number=Sing|Person=2|VerbForm=Fin',
         True,
         'suffix_lo',
         'suffix',
@@ -230,7 +191,7 @@ snapshots['test_split_on_all 2'] = [
         'misma',
         'mismo',
         'ADV',
-        'X',
+        'DET__Gender=Fem|Number=Sing|PronType=Ind',
         True,
         'suffix_mente',
         'suffix',
@@ -274,7 +235,7 @@ snapshots['test_split_on_all 2'] = [
         'se',
         'se',
         'ADV',
-        'X',
+        'PRON__Person=3|PronType=Prs',
         False,
         None,
         None,
@@ -296,7 +257,7 @@ snapshots['test_split_on_all 2'] = [
         'despac',
         'despacio',
         'ADV',
-        'X',
+        'VERB__Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin',
         True,
         'suffix_ito',
         'suffix',
@@ -401,7 +362,7 @@ snapshots['test_split_on_all 4'] = [
         'Di',
         'decir',
         'VERB',
-        'Mood=Imp|VerbForm=Fin|Person=2|Number=Sing',
+        'Mood=Imp|Number=Sing|Person=2|VerbForm=Fin',
         True,
         'suffix_me',
         'suffix',
@@ -941,6 +902,45 @@ snapshots['test_split_on_verbs 5'] = [
     [
         '.',
         '.',
+        False,
+        None,
+        None,
+        None,
+        0
+    ]
+]
+
+snapshots['test_accent_exceptions 1'] = [
+    [
+        'Ese',
+        'Ese',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        'hombre',
+        'hombre',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        'está',
+        'estar',
+        False,
+        None,
+        None,
+        None,
+        0
+    ],
+    [
+        'demente',
+        'demente',
         False,
         None,
         None,

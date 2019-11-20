@@ -252,4 +252,4 @@ def eagles2ud(eagle):
                 if feature == "Number[psor]":
                     tag += "|Poss=Yes"
                 break
-    return f"{pos}__{tag[1:]}"
+    return f"{pos}__{'|'.join(sorted(tag[1:].split('|')))}"

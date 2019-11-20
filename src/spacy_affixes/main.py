@@ -4,6 +4,7 @@ import re
 
 from spacy.matcher import Matcher
 from spacy.tokens import Token
+
 from .utils import AFFIXES_SUFFIX
 from .utils import get_morfo
 from .utils import load_affixes

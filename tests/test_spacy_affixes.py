@@ -54,12 +54,12 @@ def test_split_on_all(snapshot, nlp):
 
 
 def test_eagle2tag():
-    output = 'Gender=Masc|Number=Sing'
+    output = 'NOUN__Gender=Masc|Number=Sing'
     assert eagle2tag('NCMS000') == output
 
 
 def test_eagle2tag_not_in_dict():
-    output = 'X'
+    output = 'X__X'
     assert eagle2tag('WHATEVER') == output
 
 
