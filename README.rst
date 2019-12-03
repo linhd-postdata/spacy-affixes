@@ -2,6 +2,8 @@
 SpaCy Affixes
 =============
 
+.. image:: http://postdata.linhd.uned.es/wp-content/uploads/2019/12/logo.png
+        :target: https://spacy-affixes.readthedocs.io/en/latest/?badge=latest
 
 .. image:: https://img.shields.io/pypi/v/spacy-affixes.svg
         :target: https://pypi.python.org/pypi/spacy-affixes
