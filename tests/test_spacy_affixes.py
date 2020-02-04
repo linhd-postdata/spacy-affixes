@@ -18,7 +18,7 @@ download("es")
 def nlp():
     nlp_ = spacy.load("es")
     if nlp_.has_pipe("affixes"):
-        nlp_.remove_pipe("affixes")
+        nlp_.remove_pipe("affixes")  # pragma: no cover
     return nlp_
 
 
@@ -135,3 +135,20 @@ def test_eagles2ud_dict(test_eagles):
         res_test = set(test_eagles[eagle]["Tag"].split("|"))
         assert output == res_test
 
+
+def test_spacy_affixes_no_lemma_lookup():
+    nlp = spacy.load('es')  # noqa
+    nlp.vocab.lookups.remove_table("lemma_lookup")
+    affixes_matcher = AffixesMatcher(nlp, split_on=[])
+    nlp.add_pipe(affixes_matcher, name="affixes", before="tagger")
+    nlp("Ese hombre está demente")
+    assert True
+
+
+def test_spacy_affixes_no_vocab_lookups():
+    nlp = spacy.load('es')  # noqa
+    nlp.vocab.lookups = None
+    affixes_matcher = AffixesMatcher(nlp, split_on=[])
+    nlp.add_pipe(affixes_matcher, name="affixes", before="tagger")
+    nlp("Ese hombre está demente")
+    assert True

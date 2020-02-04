@@ -65,6 +65,18 @@ The output will be
 However, words with suffixes could also be split if needed, or virtually any word for which a rule matches,
 just by passing a list of Universal Dependency POS's to the argument :code:`split_on`. Passing in :code:`split_on="*"` would make :code:`AffixesMatcher()` try to split on everything it finds.
 
+If you want to use spacy-affixes with other spaCy models that do not use a "lemma_lookup" table, such as Stanford NLP model, add the module to the pipeline with:
+
+.. code-block:: python
+    nlp.add_pipe(affixes_matcher, name="affixes", first=True)
+
+Furthermore, if you are specifically using Stanford NLP model you have to disable the multiword token processor when loading the snlp model because it interferes with spacy-affixes as it is pre-splitting some words. In order to do so, write this when loading the snlp pipeline:
+
+.. code-block:: python
+
+    snlp = stanfordnlp.Pipeline(lang="es", processors="tokenize,pos,lemma,depparse")
+    nlp = StanfordNLPLanguage(snlp)
+
 Rules and Lexicon
 -----------------
 Due to licensing issues, :code:`spacy-affixes` comes with no rules nor lexicons by default. There are two ways of getting data into :code:`spacy-affixes`:

@@ -61,7 +61,12 @@ class AffixesMatcher(object):
         self.rules = load_affixes() if rules is None else rules
         self.lexicon = load_lexicon() if lexicon is None else lexicon
         self.split_on = ("VERB", ) if split_on is None else split_on
-        self.lemma_lookup = self.nlp.vocab.lookups.get_table("lemma_lookup")
+        try:
+            lemma_lookup = self.nlp.vocab.lookups.get_table("lemma_lookup")
+        except (AttributeError, KeyError):
+            # If no lemma_lookup is found, create an empty one
+            lemma_lookup = {}
+        self.lemma_lookup = lemma_lookup
         self.replace_lemmas = replace_lemmas
         if None in (self.lexicon, self.rules):
             raise ValueError("""
