@@ -18,7 +18,7 @@ download("es")
 def nlp():
     nlp_ = spacy.load("es")
     if nlp_.has_pipe("affixes"):
-        nlp_.remove_pipe("affixes")
+        nlp_.remove_pipe("affixes")  # pragma: no cover
     return nlp_
 
 
@@ -141,10 +141,7 @@ def test_spacy_affixes_no_lemma_lookup():
     nlp.vocab.lookups.remove_table("lemma_lookup")
     affixes_matcher = AffixesMatcher(nlp, split_on=[])
     nlp.add_pipe(affixes_matcher, name="affixes", before="tagger")
-    try:
-        nlp("Ese hombre está demente")
-    except KeyError:
-        assert False
+    nlp("Ese hombre está demente")
     assert True
 
 
@@ -153,8 +150,5 @@ def test_spacy_affixes_no_vocab_lookups():
     nlp.vocab.lookups = None
     affixes_matcher = AffixesMatcher(nlp, split_on=[])
     nlp.add_pipe(affixes_matcher, name="affixes", before="tagger")
-    try:
-        nlp("Ese hombre está demente")
-    except AttributeError:
-        assert False
+    nlp("Ese hombre está demente")
     assert True
