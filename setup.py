@@ -14,7 +14,7 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = ['spacy>=2.0']
+requirements = ['spacy>=3.0', 'spacy-lookups-data>=1.0']
 
 setup_requirements = ['pytest-runner']
 
@@ -31,6 +31,7 @@ setup(
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.9',
     ],
     description="""SpaCy support to split affixes for Freeling-like affixes """
                 """rules and dictionaries""",
