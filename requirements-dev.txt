@@ -1,0 +1,6 @@
+tox
+pytest
+syrupy
+spacy
+flake8
+-e .

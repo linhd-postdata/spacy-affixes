@@ -17,7 +17,7 @@ download("es")
 
 @pytest.fixture
 def nlp():
-    nlp_ = spacy.load("es_core_news_sm")
+    nlp_ = spacy.load("es_core_news_md")
     if nlp_.has_pipe("affixes"):
         nlp_.remove_pipe("affixes")  # pragma: no cover
     return nlp_
@@ -138,7 +138,7 @@ def test_eagles2ud_dict(test_eagles):
 
 
 def test_spacy_affixes_no_lemma_lookup():
-    nlp = spacy.load('es_core_news_sm')  # noqa
+    nlp = spacy.load('es_core_news_md')  # noqa
     Language.component("affixes", func=AffixesMatcher(nlp, split_on=[]))
     nlp.add_pipe("affixes", before="morphologizer")
     nlp.vocab.lookups.remove_table("lemma_lookup")

@@ -65,8 +65,10 @@ class AffixesMatcher(object):
         self.lexicon = load_lexicon() if lexicon is None else lexicon
         self.split_on = ("VERB", ) if split_on is None else split_on
         try:
-            with gzip.open(f"{es.get('lemma_lookup')}.gz", "r") as lookup_table:
-                nlp.vocab.lookups.add_table("lemma_lookup", json.load(lookup_table))
+            lemma_lookup_table = es.get('lemma_lookup')
+            with gzip.open(f"{lemma_lookup_table}.gz", "r") as lookup_table:
+                nlp.vocab.lookups.add_table("lemma_lookup",
+                                            json.load(lookup_table))
             lemma_lookup = self.nlp.vocab.lookups.get_table("lemma_lookup")
         except (AttributeError, KeyError):
             # If no lemma_lookup is found, create an empty one
@@ -95,9 +97,10 @@ class AffixesMatcher(object):
             for rule in rules:
                 pattern = [{"TEXT": {"REGEX": fr"(?i){rule['pattern']}"}}]
                 self.matcher.add(rule_key, [pattern]
-                    # It'd be nice if we could check regex AND minimum length
-                    # {"LENGTH": {">": len(rule_key)}},
-                )
+                                 # It'd be nice if we could check
+                                 # regex AND minimum length
+                                 # {"LENGTH": {">": len(rule_key)}},
+                                 )
 
     def apply_rules(self, retokenizer, token, rule):
         if (rule["always_apply"]
