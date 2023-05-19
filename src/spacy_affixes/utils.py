@@ -15,7 +15,7 @@ FREELING_DIR = os.environ.get("FREELINGDIR") or os.environ.get("FREELINGSHARE")
 
 
 def download(lang, version=None):
-    version = version if version is not None else "4.1"
+    version = version if version is not None else "4.2"
     affixes = download_affixes(lang, version)
     write_affixes(lang, version, affixes)
     lexicon = download_lexicon(lang, version)
@@ -34,7 +34,7 @@ def write_lexicon(lang, version, lexicon):
         json.dump(lexicon, dump)
 
 
-def load_affixes(lang="es", version="4.1"):
+def load_affixes(lang="es", version="4.2"):
     affixes_filename = f"affixes-{lang}-{version}.json"
     affixes_path = os.path.join(DATA_DIR, affixes_filename)
     if not os.path.isfile(affixes_path):
@@ -59,7 +59,7 @@ def load_affixes(lang="es", version="4.1"):
             return json.load(dump)
 
 
-def load_lexicon(lang="es", version="4.1"):
+def load_lexicon(lang="es", version="4.2"):
     lexicon_filename = f"lexicon-{lang}-{version}.json"
     lexicon_path = os.path.join(DATA_DIR, lexicon_filename)
     if not os.path.isfile(lexicon_path):
@@ -84,7 +84,7 @@ def load_lexicon(lang="es", version="4.1"):
             return json.load(dump)
 
 
-def download_affixes(lang="es", version="4.1"):
+def download_affixes(lang="es", version="4.2"):
     sys.stdout.write(f"Downloading affixes {lang}-{version}...\n")
     url = (f"https://raw.githubusercontent.com/TALP-UPC/FreeLing/"
            f"{version}/data/{lang}/afixos.dat")
@@ -167,7 +167,7 @@ def token_transform(string, add, strip_accent):
     return transform
 
 
-def download_lexicon(lang="es", version="4.1"):
+def download_lexicon(lang="es", version="4.2"):
     sys.stdout.write(f"Downloading lexicon {lang}-{version}...\n")
     url = (f"https://raw.githubusercontent.com/TALP-UPC/FreeLing/"
            f"{version}/data/{lang}/dictionary/entries/MM.{{category}}")

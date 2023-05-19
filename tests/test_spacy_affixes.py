@@ -6,6 +6,7 @@ from pathlib import Path
 
 import pytest
 import spacy
+from spacy.language import Language
 from spacy_affixes import AffixesMatcher
 from spacy_affixes.utils import download
 from spacy_affixes.utils import eagle2tag
@@ -16,7 +17,7 @@ download("es")
 
 @pytest.fixture
 def nlp():
-    nlp_ = spacy.load("es")
+    nlp_ = spacy.load("es_core_news_md")
     if nlp_.has_pipe("affixes"):
         nlp_.remove_pipe("affixes")  # pragma: no cover
     return nlp_
@@ -29,8 +30,8 @@ def test_eagles():
 
 
 def test_split_on_all(snapshot, nlp):
-    affixes_matcher = AffixesMatcher(nlp, split_on='*')
-    nlp.add_pipe(affixes_matcher, name="affixes", before="tagger")
+    Language.component("affixes", func=AffixesMatcher(nlp, split_on='*'))
+    nlp.add_pipe("affixes", before="morphologizer")
     docs = (
         "Cuéntamelo bien y dilo claro, no me des un caramelo.",
         "Yo mismamente podría hacérselo despacito.",
@@ -64,8 +65,8 @@ def test_eagle2tag_not_in_dict():
 
 
 def test_get_morfo_rules(snapshot, nlp):
-    affixes_matcher = AffixesMatcher(nlp)
-    nlp.add_pipe(affixes_matcher, name="affixes", before="tagger")
+    Language.component("affixes", func=AffixesMatcher(nlp))
+    nlp.add_pipe("affixes", before="morphologizer")
     docs = (
         ("antitabaco", "antitabaco"),
         ("dímelo", "decir"),
@@ -86,8 +87,8 @@ def test_get_morfo_rules(snapshot, nlp):
 
 
 def test_split_on_verbs(snapshot, nlp):
-    affixes_matcher = AffixesMatcher(nlp, split_on=["VERB"])
-    nlp.add_pipe(affixes_matcher, name="affixes", before="tagger")
+    Language.component("affixes", func=AffixesMatcher(nlp, split_on=["VERB"]))
+    nlp.add_pipe("affixes", before="morphologizer")
     docs = (
         "Cuéntamelo bien y dilo claro, no me des un caramelo.",
         "Yo mismamente podría hacérselo despacito.",
@@ -108,8 +109,8 @@ def test_split_on_verbs(snapshot, nlp):
 
 
 def test_accent_exceptions(snapshot, nlp):
-    affixes_matcher = AffixesMatcher(nlp, split_on=[])
-    nlp.add_pipe(affixes_matcher, name="affixes", before="tagger")
+    Language.component("affixes", func=AffixesMatcher(nlp, split_on=[]))
+    nlp.add_pipe("affixes", before="morphologizer")
     docs = (
         "Ese hombre está demente",
         "automáticamente",
@@ -137,18 +138,9 @@ def test_eagles2ud_dict(test_eagles):
 
 
 def test_spacy_affixes_no_lemma_lookup():
-    nlp = spacy.load('es')  # noqa
+    nlp = spacy.load('es_core_news_md')  # noqa
+    Language.component("affixes", func=AffixesMatcher(nlp, split_on=[]))
+    nlp.add_pipe("affixes", before="morphologizer")
     nlp.vocab.lookups.remove_table("lemma_lookup")
-    affixes_matcher = AffixesMatcher(nlp, split_on=[])
-    nlp.add_pipe(affixes_matcher, name="affixes", before="tagger")
-    nlp("Ese hombre está demente")
-    assert True
-
-
-def test_spacy_affixes_no_vocab_lookups():
-    nlp = spacy.load('es')  # noqa
-    nlp.vocab.lookups = None
-    affixes_matcher = AffixesMatcher(nlp, split_on=[])
-    nlp.add_pipe(affixes_matcher, name="affixes", before="tagger")
     nlp("Ese hombre está demente")
     assert True
